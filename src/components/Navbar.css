@@ -129,7 +129,7 @@ img {
   .nav-links-mobile {
     display: block;
     text-align: center;
-    padding: 1rem;
+    padding: 15px 10px;
     margin: 2rem auto;
     border-radius: 4px;
     width: 30%;
@@ -142,7 +142,7 @@ img {
 
   .nav-links-mobile:hover {
     transition: 250ms;
-    padding: 20px 20px;
+    padding: 17px 10px;
     transition: all 0.3s ease-out;
     border-radius: 4px;
     border: 1px dotted var(--clr-primary-5);
