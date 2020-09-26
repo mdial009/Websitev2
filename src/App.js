@@ -7,6 +7,7 @@ import About from "./components/pages/About";
 import Contact from "./components/pages/Contact";
 import Footer from "./components/Footer";
 import Experience from "./components/pages/Experience";
+import Work from "./components/pages/Work";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
   <Route path="/Contact" component={Contact} />  */}
       <About />
       <Experience />
+      <Work />
       <Contact />
       <Footer />
     </Router>
