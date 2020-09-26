@@ -3,7 +3,7 @@ import { Button } from "./Button";
 import { Link } from "react-router-dom";
 import "./Navbar.css";
 import Dropdown from "./Dropdown";
-import logo from "../images/MadanyLogo4.png";
+import logo from "../images/MadanyLogo5.png";
 
 function Navbar() {
   const [click, setClick] = useState(false);
@@ -85,7 +85,7 @@ function Navbar() {
             </Link>
           </li>
         </ul>
-        <Button />
+        <Button>Résumé</Button>
       </nav>
     </>
   );

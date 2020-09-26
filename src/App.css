@@ -19,6 +19,9 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+html {
+  scroll-behavior: smooth;
+}
 /*
 =============== 
 Fonts
@@ -49,7 +52,7 @@ Variables
   /* primary/main color */
   --clr-primary-5: #48ccc4;
   /* secondary/main color */
-  --clr-primary-11: #00B4D8;
+  --clr-primary-11: #00b4d8;
   --clr-primary-12: #80ffdb;
   /* lighter shades of primary color */
   --clr-primary-6: #48cae4;
@@ -100,13 +103,10 @@ Variables
   --dark-text-color: #eeeeee;
 }
 
-.home,
-.services,
-.products,
-.contact-us,
-.sign-up,
-.marketing,
-.consulting {
+.About,
+.Experience,
+.Work,
+.Contact {
   display: flex;
   height: 90vh;
   align-items: center;
@@ -114,7 +114,7 @@ Variables
   font-size: 3rem;
 }
 
-.home {
+.About {
   /*background-image: url("./images/img-1.jpg"); */
   background-position: center;
   background-size: cover;
@@ -122,55 +122,25 @@ Variables
   color: #fff;
   font-size: 100px;
 }
-
-.services {
-  /*  background-image: url("./images/img-2.jpg"); */
+.Experience {
+  /*background-image: url("./images/img-1.jpg"); */
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   color: #fff;
   font-size: 100px;
 }
-
-.products {
-  /* background-image: url("./images/img-3.jpg"); */
+.Work {
+  /*background-image: url("./images/img-1.jpg"); */
   background-position: center;
-  background-size: fill;
+  background-size: cover;
   background-repeat: no-repeat;
   color: #fff;
   font-size: 100px;
 }
-
-.contact-us {
+.Contact {
   /* background-image: url("./images/img-4.jpg"); */
   background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  color: #fff;
-  font-size: 100px;
-}
-
-.sign-up {
-  /*background-image: url("./images/img-7.jpg");*/
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  color: #fff;
-  font-size: 100px;
-}
-
-.marketing {
-  /*background-image: url("./images/img-6.jpg");*/
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  color: #fff;
-  font-size: 100px;
-}
-
-.consulting {
-  /*background-image: url("./images/img-5.jpg");*/
-  background-position: bottom;
   background-size: cover;
   background-repeat: no-repeat;
   color: #fff;
