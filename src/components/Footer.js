@@ -112,6 +112,13 @@ function Footer() {
                 </div>
               )}
             </a>
+            <a href="https://mdial009.github.io">
+              {githubInfo.blogs && (
+                <div className="github-stats">
+                  {githubInfo.blogs.toLocaleString()}
+                </div>
+              )}
+            </a>
           </small>
           <div class="social-icons">
             <Link
