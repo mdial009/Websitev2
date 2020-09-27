@@ -90,9 +90,7 @@ function Footer() {
             <a>
               {githubInfo.blogs && githubInfo.repos && (
                 <div className="github-stats">
-                  <p1>Website</p1>
                   {githubInfo.blogs.toLocaleString()}
-                  <span>{githubInfo.repos.toLocaleString()}</span>
                 </div>
               )}
             </a>
