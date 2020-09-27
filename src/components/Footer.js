@@ -95,8 +95,9 @@ function Footer() {
             <a class="website-rights" href="https://github.com/mdial009">
               {githubInfo.followers && githubInfo.repos && (
                 <div>
-                  Followers: {githubInfo.followers.toLocaleString()} <span> </span>
-                  Repos: {githubInfo.repos.toLocaleString()}
+                  Followers:{githubInfo.followers.toLocaleString()}{" "}
+                  <span> </span>
+                  Repos:{githubInfo.repos.toLocaleString()}
                 </div>
               )}
             </a>
