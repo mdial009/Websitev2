@@ -57,13 +57,13 @@ function Footer() {
         <div className="footer-link-wrapper">
           <div class="footer-link-items">
             <h2>
-              Contact <span>M</span>e 
+              Contact <span>M</span>e
             </h2>
             <Link to="/">
-              <span>M</span>adanyx@gmail.com
+              <span>M</span>adanyx@g<span>m</span>ail.co<span>m</span>
             </Link>
             <Link to="/">
-              <span>M</span>adanydiallo@aol.com
+              <span>M</span>adanydiallo@aol.co<span>m</span>
             </Link>
           </div>
         </div>
@@ -72,7 +72,9 @@ function Footer() {
             <h2>
               Social <span>M</span>edia
             </h2>
-            <Link to="/">Instagram</Link>
+            <Link to="/">
+              Instagra<span>m</span>
+            </Link>
             <Link to="/" href="https://www.facebook.com/madany.diallo.7">
               Facebook
             </Link>
