@@ -89,7 +89,7 @@ function Footer() {
           </div>
           <small class="website-rights">
             Madany Diallo © 2020
-            <a href="https://github.com/mdial009">
+            <a class="website-rights" href="https://github.com/mdial009">
               {githubInfo.followers && githubInfo.repos && (
                 <div>
                   Followers:
@@ -99,7 +99,7 @@ function Footer() {
                 </div>
               )}
             </a>
-            <a href="https://mdial009.github.io">
+            <a class="website-rights" href="https://mdial009.github.io">
               {githubInfo.blogs && (
                 <div>{githubInfo.blogs.toLocaleString()}</div>
               )}
