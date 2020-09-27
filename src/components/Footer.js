@@ -86,9 +86,9 @@ function Footer() {
               <img className="social-logo" src={logo} />
             </Link>
           </div>
-          <a href="https://github.com/mdial009/websitev2">
-            <small class="website-rights">Madany Diallo © 2020</small>
+          <small class="website-rights">Madany Diallo © 2020</small>
 
+          <a href="https://github.com/mdial009/websitev2">
             {githubInfo.stars && githubInfo.forks && (
               <div className="github-stats">
                 <span>

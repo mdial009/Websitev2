@@ -178,9 +178,8 @@ span {
 @media screen and (max-width: 768px) {
 }
 
-.Star {
-  color: aqua;
+.github-stats {
+  margin-top: 10px;
 }
-.Fork {
-  color: aqua;
-}
+
+
