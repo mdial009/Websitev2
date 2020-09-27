@@ -88,12 +88,14 @@ function Footer() {
             </Link>
           </div>
           <small class="website-rights">
-            Madany Diallo © 2020
+            <a href="https://github.com/mdial009/Websitev2">
+              {" "}
+              Madany Diallo © 2020{" "}
+            </a>
             <a class="website-rights" href="https://github.com/mdial009">
               {githubInfo.followers && githubInfo.repos && (
                 <div>
-                  Followers:
-                  {githubInfo.followers.toLocaleString()}
+                  Followers: {githubInfo.followers.toLocaleString()} <span> </span>
                   Repos: {githubInfo.repos.toLocaleString()}
                 </div>
               )}
