@@ -91,7 +91,7 @@ function Footer() {
             Madany Diallo © 2020
             <a href="https://github.com/mdial009">
               {githubInfo.followers && githubInfo.repos && (
-                <div className="github-stats">
+                <div>
                   Followers:
                   <span>{githubInfo.followers.toLocaleString()}</span>
                   <span> </span>
@@ -101,9 +101,7 @@ function Footer() {
             </a>
             <a href="https://mdial009.github.io">
               {githubInfo.blogs && (
-                <div className="github-stats">
-                  {githubInfo.blogs.toLocaleString()}
-                </div>
+                <div>{githubInfo.blogs.toLocaleString()}</div>
               )}
             </a>
           </small>
