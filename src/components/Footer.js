@@ -17,11 +17,12 @@ function Footer() {
     fetch("https://api.github.com/users/mdial009")
       .then((response) => response.json())
       .then((json) => {
-        const { followers, public_repos, blog } = json;
+        const { followers, public_repos, blog, following } = json;
         setGitHubInfo({
           followers: followers,
           repos: public_repos,
           blogs: blog,
+          following: following,
         });
       })
       .catch((e) => console.error(e));
@@ -96,13 +97,17 @@ function Footer() {
               Madany Diallo © 2020{" "}
             </a>
             <a class="website-rights" href="https://github.com/mdial009">
-              {githubInfo.followers && githubInfo.repos && (
-                <div>
-                  Followers:{githubInfo.followers.toLocaleString()}{" "}
-                  <span> </span>
-                  Repos:{githubInfo.repos.toLocaleString()}
-                </div>
-              )}
+              {githubInfo.followers &&
+                githubInfo.repos &&
+                githubInfo.following && (
+                  <div>
+                    Followers:{githubInfo.followers.toLocaleString()}{" "}
+                    <span> </span>
+                    Repos:{githubInfo.repos.toLocaleString()}
+                    <span> </span>
+                    following:{githubInfo.following.toLocaleString()}
+                  </div>
+                )}
             </a>
             <a class="website-rights" href="https://mdial009.github.io">
               {githubInfo.blogs && (
