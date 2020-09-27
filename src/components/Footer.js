@@ -14,12 +14,12 @@ function Footer() {
     if (process.env.NODE_ENV !== "production") {
       return;
     }
-    fetch("https://api.github.com/users/mdial009/")
+    fetch("https://api.github.com/users/mdial009")
       .then((response) => response.json())
       .then((json) => {
         const { blog, public_repos } = json;
         setGitHubInfo({
-          blog: blog,
+          blogs: blog,
           repos: public_repos,
         });
       })
@@ -88,12 +88,12 @@ function Footer() {
           </div>
           <small class="website-rights">
             Madany Diallo © 2020{" "}
-            <a className="githubapi" href="https://github.com/mdial009/">
-              {githubInfo.blog && githubInfo.repos && (
+            <a className="githubapi" href="https://github.com/mdial009">
+              {githubInfo.blogs && githubInfo.repos && (
                 <div className="github-stats">
                   <span>
                     <h2 name="Star" />
-                    <span>{githubInfo.blog.toLocaleString()}</span>
+                    <span>{githubInfo.blogs.toLocaleString()}</span>
                   </span>
                   <span>
                     <h2 name="Fork" />
