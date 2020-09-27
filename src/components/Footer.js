@@ -17,10 +17,10 @@ function Footer() {
     fetch("https://api.github.com/repos/mdial009/websitev2")
       .then((response) => response.json())
       .then((json) => {
-        const { stargazers_count, forks_count } = json;
+        const { created_at, updated_at } = json;
         setGitHubInfo({
-          stars: stargazers_count,
-          forks: forks_count,
+          created: created_at,
+          updated: updated_at,
         });
       })
       .catch((e) => console.error(e));
@@ -92,15 +92,15 @@ function Footer() {
               className="githubapi"
               href="https://github.com/mdial009/websitev2"
             >
-              {githubInfo.stars && githubInfo.forks && (
+              {githubInfo.created && githubInfo.updated && (
                 <div className="github-stats">
                   <span>
                     <h2 name="Star" />
-                    <span>{githubInfo.stars.toLocaleString()}</span>
+                    <span>{githubInfo.created.toLocaleString()}</span>
                   </span>
                   <span>
                     <h2 name="Fork" />
-                    <span>{githubInfo.forks.toLocaleString()}</span>
+                    <span>{githubInfo.updated.toLocaleString()}</span>
                   </span>
                 </div>
               )}
