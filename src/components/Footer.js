@@ -87,15 +87,6 @@ function Footer() {
               <img className="social-logo" src={logo} />
             </Link>
           </div>
-          <small className="website-rights">
-            <a href="https://mdial009.github.io">
-              {githubInfo.blogs && (
-                <div className="github-stats">
-                  {githubInfo.blogs.toLocaleString()}
-                </div>
-              )}
-            </a>
-          </small>
           <small class="website-rights">
             Madany Diallo © 2020
             <a href="https://github.com/mdial009">
