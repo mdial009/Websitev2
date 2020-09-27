@@ -102,14 +102,11 @@ function Footer() {
               {githubInfo.followers && githubInfo.repos && (
                 <div className="github-stats">
                   <span>
-                    Followers
-                    <h2 name="Star" />
+                    Followers{" "}
                     <span>{githubInfo.followers.toLocaleString()}</span>
                   </span>
                   <span>
-                    Repos
-                    <h2 name="Fork" />
-                    <span>{githubInfo.repos.toLocaleString()}</span>
+                    Repos <span>{githubInfo.repos.toLocaleString()}</span>
                   </span>
                 </div>
               )}
