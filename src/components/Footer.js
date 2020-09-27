@@ -86,15 +86,11 @@ function Footer() {
               <img className="social-logo" src={logo} />
             </Link>
           </div>
-          <a className="githubapi" href="https://github.com/mdial009">
+          <a className="githubapi" href="https://mdial009.github.io">
             {githubInfo.blogs && githubInfo.repos && (
               <div className="github-stats">
-                <span>
-                  <h2 name="Star" />
-                  <span href="https://mdial009.github.io">
-                    {githubInfo.blogs.toLocaleString()}
-                  </span>
-                </span>
+                <h2>Website</h2>
+                {githubInfo.blogs.toLocaleString()}
                 <span>
                   <h2 name="Fork" />
                   <span>{githubInfo.repos.toLocaleString()}</span>
