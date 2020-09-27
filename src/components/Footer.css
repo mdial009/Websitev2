@@ -186,3 +186,7 @@ span {
   text-align: center;
   padding-bottom: -1px;
 }
+
+a {
+  text-decoration: none;
+}
