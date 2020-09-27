@@ -89,7 +89,7 @@ function Footer() {
           <small class="website-rights">
             Madany Diallo © 2020{" "}
             <a className="githubapi" href="https://github.com/mdial009/">
-              {githubInfo.created && githubInfo.updated && (
+              {githubInfo.blog && githubInfo.repos && (
                 <div className="github-stats">
                   <span>
                     <h2 name="Star" />
