@@ -139,6 +139,7 @@ input {
 .website-rights {
   color: #fff;
   margin-bottom: 15px;
+  text-decoration: none;
 }
 .website-rights:hover {
   color: var(--clr-primary-5);
