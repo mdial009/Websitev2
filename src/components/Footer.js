@@ -14,7 +14,7 @@ function Footer() {
     if (process.env.NODE_ENV !== "production") {
       return;
     }
-    fetch("https://api.github.com/repos/bchiang7/v4")
+    fetch("https://api.github.com/repos/mdial0097/websitev2")
       .then((response) => response.json())
       .then((json) => {
         const { stargazers_count, forks_count } = json;
