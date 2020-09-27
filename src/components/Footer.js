@@ -86,22 +86,26 @@ function Footer() {
               <img className="social-logo" src={logo} />
             </Link>
           </div>
-          <small class="website-rights">Madany Diallo © 2020</small>
-
-          <a href="https://github.com/mdial009/websitev2">
-            {githubInfo.stars && githubInfo.forks && (
-              <div className="github-stats">
-                <span>
-                  <h2 name="Star" />
-                  <span>{githubInfo.stars.toLocaleString()}</span>
-                </span>
-                <span>
-                  <h2 name="Fork" />
-                  <span>{githubInfo.forks.toLocaleString()}</span>
-                </span>
-              </div>
-            )}
-          </a>
+          <small class="website-rights">
+            Madany Diallo © 2020{" "}
+            <a
+              className="githubapi"
+              href="https://github.com/mdial009/websitev2"
+            >
+              {githubInfo.stars && githubInfo.forks && (
+                <div className="github-stats">
+                  <span>
+                    <h2 name="Star" />
+                    <span>{githubInfo.stars.toLocaleString()}</span>
+                  </span>
+                  <span>
+                    <h2 name="Fork" />
+                    <span>{githubInfo.forks.toLocaleString()}</span>
+                  </span>
+                </div>
+              )}
+            </a>{" "}
+          </small>
           <div class="social-icons">
             <Link
               class="social-icon-link facebook"

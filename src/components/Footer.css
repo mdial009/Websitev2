@@ -178,8 +178,16 @@ span {
 @media screen and (max-width: 768px) {
 }
 
-.github-stats {
-  margin-top: 10px;
+/* .githubapi {
+  text-decoration: none;
+  text-align: center;
+  padding-bottom: 15px;
+
+} */
+
+.githubapi {
+  text-decoration: none;
+  text-align: center;
+  padding-bottom: -1px;
+  
 }
-
-
