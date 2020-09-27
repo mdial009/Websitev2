@@ -1,3 +1,4 @@
+@import "../App.css";
 
 .footer-container {
   padding: auto auto auto;
@@ -59,12 +60,10 @@
   width: auto;
   box-sizing: border-box;
   font-size: var(--fs-md);
-  font-family: var(--ff-third);
 }
 
 .footer-link-items h2 {
-  margin-bottom: 16px;
-  font-family: "SFMono";
+  margin-bottom: 10px;
 }
 
 .footer-link-items > h2 {
@@ -175,10 +174,3 @@ span {
 
 @media screen and (max-width: 768px) {
 }
-
-/* .githubapi {
-  text-decoration: none;
-  text-align: center;
-  padding-bottom: 15px;
-
-} */
