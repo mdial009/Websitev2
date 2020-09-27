@@ -17,10 +17,11 @@ function Footer() {
     fetch("https://api.github.com/users/mdial009")
       .then((response) => response.json())
       .then((json) => {
-        const { followers, public_repos } = json;
+        const { followers, public_repos, blogs } = json;
         setGitHubInfo({
           followers: followers,
           repos: public_repos,
+          blogs: blog,
         });
       })
       .catch((e) => console.error(e));
@@ -100,9 +101,7 @@ function Footer() {
                 <div className="github-stats">
                   <span>
                     <h2 name="Star" />
-                    <span href="https://mdial009.github.io">
-                      {githubInfo.followers.toLocaleString()}
-                    </span>
+                    <span>{githubInfo.followers.toLocaleString()}</span>
                   </span>
                   <span>
                     <h2 name="Fork" />
