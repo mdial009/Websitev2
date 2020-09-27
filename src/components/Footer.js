@@ -86,10 +86,10 @@ function Footer() {
               <img className="social-logo" src={logo} />
             </Link>
           </div>
-          <a className="githubapi" href="https://mdial009.github.io">
+          <a className="website-rights" href="https://mdial009.github.io">
             {githubInfo.blogs && githubInfo.repos && (
               <div className="github-stats">
-                <h2>Website</h2>
+                <p1>Website</p1>
                 {githubInfo.blogs.toLocaleString()}
                 <span>
                   <h2 name="Fork" />
@@ -97,7 +97,7 @@ function Footer() {
                 </span>
               </div>
             )}
-          </a>{" "}
+          </a>
           <small class="website-rights">
             Madany Diallo © 2020
             <a className="githubapi" href="https://github.com/mdial009">
