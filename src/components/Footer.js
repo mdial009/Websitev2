@@ -105,7 +105,7 @@ function Footer() {
                     Followers:
                     <span>{githubInfo.followers.toLocaleString()}</span>
                   </span>
-                  <span>{""}</span>
+                  <span> </span>
                   <span>
                     Repos:<span>{githubInfo.repos.toLocaleString()}</span>
                   </span>
