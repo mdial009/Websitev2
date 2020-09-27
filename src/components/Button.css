@@ -3,7 +3,7 @@
   border-radius: 4px;
   outline: none;
   border: none;
-  font-size: var(--ff-sm);
+  font-size: var(--fs-sm);
   cursor: pointer;
   background-color: transparent;
   border: 1px dotted var(--clr-primary-5);

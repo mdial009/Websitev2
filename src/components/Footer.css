@@ -1,5 +1,5 @@
+
 .footer-container {
-  background-color: var(--clr-background);
   padding: auto auto auto;
   display: flex;
   flex-direction: column;
@@ -13,7 +13,6 @@
   justify-content: center;
   align-items: center;
   text-align: center;
-
   margin-bottom: 24px;
   padding: 24px;
   color: #fff;
@@ -55,14 +54,17 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  margin: 16px;
+  margin: 5px;
   text-align: left;
-  width: 160px;
+  width: auto;
   box-sizing: border-box;
+  font-size: var(--fs-md);
+  font-family: var(--ff-third);
 }
 
 .footer-link-items h2 {
   margin-bottom: 16px;
+  font-family: "SFMono";
 }
 
 .footer-link-items > h2 {
@@ -180,6 +182,3 @@ span {
   padding-bottom: 15px;
 
 } */
-
-
-

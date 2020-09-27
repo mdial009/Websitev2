@@ -37,7 +37,7 @@ function Footer() {
           Although I'<span>m</span> not currently looking for any new
           opportunities, <span>m</span>y inbox is always open. Whether you have
           a question or just want to say hi, I'll try <span>m</span>y best to
-          get back to you! at any ti<span>m</span>e.
+          get back to you! at any ti<span>m</span>e Social Media .
         </p>
         <div className="input-areas">
           <form>

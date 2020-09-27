@@ -120,7 +120,7 @@ Variables
   background-size: cover;
   background-repeat: no-repeat;
   color: #fff;
-  font-size: 100px;
+  font-size: var(--fs-md);
 }
 .Experience {
   /*background-image: url("./images/img-1.jpg"); */
@@ -128,7 +128,7 @@ Variables
   background-size: cover;
   background-repeat: no-repeat;
   color: #fff;
-  font-size: 100px;
+  font-size: var(--fs-md);
 }
 .Work {
   /*background-image: url("./images/img-1.jpg"); */
@@ -136,7 +136,7 @@ Variables
   background-size: cover;
   background-repeat: no-repeat;
   color: #fff;
-  font-size: 100px;
+  font-size: var(--fs-md);
 }
 .Contact {
   /* background-image: url("./images/img-4.jpg"); */
@@ -144,5 +144,5 @@ Variables
   background-size: cover;
   background-repeat: no-repeat;
   color: #fff;
-  font-size: 100px;
+  font-size: var(--fs-md);
 }
