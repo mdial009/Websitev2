@@ -43,8 +43,9 @@
 .nav-links:hover {
   border-radius: 4px;
   transition: all 0.2s ease-out;
-  border: 2px dotted var(--clr-primary-11);
   color: var(--clr-primary-5);
+  box-shadow: 0 0 15px var(--clr-primary-5), 0 0 30px var(--clr-primary-5),
+    0 0 45px var(--clr-primary-5);
 }
 
 .fa-bars {
@@ -100,8 +101,7 @@ img {
 
   .nav-links:hover {
     color: var(--clr-primary-5);
-    border-radius: 4px;
-    border: none;
+    box-shadow: none;
   }
 
   .navbar-logo {
@@ -131,8 +131,8 @@ img {
     text-align: center;
     padding: 15px 10px;
     margin: 2rem auto;
-    border-radius: 4px;
-    width: 30%;
+    border-radius: 9px;
+    width: 20%;
     text-decoration: none;
     font-size: 1.5rem;
     background-color: transparent;
@@ -144,10 +144,10 @@ img {
     transition: 250ms;
     padding: 17px 10px;
     transition: all 0.3s ease-out;
-    border-radius: 4px;
+    border-radius: 10px;
     border: 1px dotted var(--clr-primary-5);
-    background-color: hsl(190, 25%, 25%);
-  }
+    box-shadow: 0 0 15px var(--clr-primary-5), 0 0 30px var(--clr-primary-5),
+    0 0 45px var(--clr-primary-5);  }
 
   button {
     display: none;
