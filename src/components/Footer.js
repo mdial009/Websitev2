@@ -96,7 +96,7 @@ function Footer() {
           </small>
           <small class="website-rights">
             Madany Diallo © 2020
-            <a href="https://github.com/mdial009">
+            <a>
               {githubInfo.followers && githubInfo.repos && (
                 <div className="github-stats">
                   <span>
