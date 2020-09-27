@@ -109,7 +109,7 @@ function Footer() {
                   </span>
                 </div>
               )}
-            </a>{" "}
+            </a>
           </small>
           <div class="social-icons">
             <Link
