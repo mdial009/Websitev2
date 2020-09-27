@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import { Button } from "./Button";
-import { Link } from "react-router-dom";
 import "./Navbar.css";
 import Dropdown from "./Dropdown";
 import logo from "../images/MadanyLogo5.png";
+import { Link } from "react-scroll";
 
 function Navbar() {
   const [click, setClick] = useState(false);
@@ -39,7 +39,7 @@ function Navbar() {
         </div>
         <ul className={click ? "nav-menu active" : "nav-menu"}>
           <li className="nav-item">
-            <Link to="/" className="nav-links" onClick={closeMobileMenu}>
+            <Link to="About" className="nav-links" onClick={closeMobileMenu}>
               <span>01. </span>About
             </Link>
           </li>
@@ -49,7 +49,7 @@ function Navbar() {
             onMouseLeave={onMouseLeave}
           >
             <Link
-              to="/services"
+              to="Experience"
               className="nav-links"
               onClick={closeMobileMenu}
             >
@@ -58,20 +58,12 @@ function Navbar() {
             {dropdown && <Dropdown />}
           </li>
           <li className="nav-item">
-            <Link
-              to="/products"
-              className="nav-links"
-              onClick={closeMobileMenu}
-            >
+            <Link to="Work" className="nav-links" onClick={closeMobileMenu}>
               <span>03. </span>Work
             </Link>
           </li>
           <li className="nav-item">
-            <Link
-              to="/contact-us"
-              className="nav-links"
-              onClick={closeMobileMenu}
-            >
+            <Link to="Contact" className="nav-links" onClick={closeMobileMenu}>
               <span>04. </span>Contact
             </Link>
           </li>

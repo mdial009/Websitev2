@@ -177,3 +177,10 @@ span {
 
 @media screen and (max-width: 768px) {
 }
+
+.Star {
+  color: aqua;
+}
+.Fork {
+  color: aqua;
+}
