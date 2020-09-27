@@ -17,7 +17,7 @@ function Footer() {
     fetch("https://api.github.com/users/mdial009")
       .then((response) => response.json())
       .then((json) => {
-        const { followers, public_repos, blogs } = json;
+        const { followers, public_repos, blog } = json;
         setGitHubInfo({
           followers: followers,
           repos: public_repos,
