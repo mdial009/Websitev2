@@ -92,14 +92,10 @@ function Footer() {
             <a href="https://github.com/mdial009">
               {githubInfo.followers && githubInfo.repos && (
                 <div className="github-stats">
-                  <span>
-                    Followers:
-                    <span>{githubInfo.followers.toLocaleString()}</span>
-                  </span>
+                  Followers:
+                  <span>{githubInfo.followers.toLocaleString()}</span>
                   <span> </span>
-                  <span>
-                    Repos:<span>{githubInfo.repos.toLocaleString()}</span>
-                  </span>
+                  Repos:<span>{githubInfo.repos.toLocaleString()}</>
                 </div>
               )}
             </a>
