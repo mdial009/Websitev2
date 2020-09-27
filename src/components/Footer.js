@@ -91,8 +91,6 @@ function Footer() {
               <div className="github-stats">
                 <p1>Website</p1>
                 {githubInfo.blogs.toLocaleString()}
-
-                <h2 name="Fork" />
                 <span>{githubInfo.repos.toLocaleString()}</span>
               </div>
             )}
