@@ -87,13 +87,15 @@ function Footer() {
             </Link>
           </div>
           <small className="website-rights" href="https://mdial009.github.io">
-            {githubInfo.blogs && githubInfo.repos && (
-              <div className="github-stats">
-                <p1>Website</p1>
-                {githubInfo.blogs.toLocaleString()}
-                <span>{githubInfo.repos.toLocaleString()}</span>
-              </div>
-            )}
+            <a>
+              {githubInfo.blogs && githubInfo.repos && (
+                <div className="github-stats">
+                  <p1>Website</p1>
+                  {githubInfo.blogs.toLocaleString()}
+                  <span>{githubInfo.repos.toLocaleString()}</span>
+                </div>
+              )}
+            </a>
           </small>
           <small class="website-rights">
             Madany Diallo © 2020
