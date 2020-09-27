@@ -88,7 +88,10 @@ function Footer() {
             </Link>
           </div>
           <small class="website-rights">
-            <a href="https://github.com/mdial009/Websitev2">
+            <a
+              class="website-rights"
+              href="https://github.com/mdial009/Websitev2"
+            >
               {" "}
               Madany Diallo © 2020{" "}
             </a>
