@@ -10,6 +10,7 @@ function Navbar() {
   const [dropdown, setDropdown] = useState(false);
 
   const handleClick = () => setClick(!click);
+
   const closeMobileMenu = () => setClick(false);
 
   const onMouseEnter = () => {
@@ -53,9 +54,10 @@ function Navbar() {
               className="nav-links"
               onClick={closeMobileMenu}
             >
-              <span>02. </span>Experience <i className="fas fa-caret-down" />
+              <span>02. </span>Experience{" "}
+              {/*<i className="fas fa-caret-down" /> */}
             </Link>
-            {dropdown && <Dropdown />}
+            {/*dropdown && <Dropdown /> */}
           </li>
           <li className="nav-item">
             <Link to="Work" className="nav-links" onClick={closeMobileMenu}>
@@ -77,6 +79,7 @@ function Navbar() {
             </Link>
           </li>
         </ul>
+
         <Button>Résumé</Button>
       </nav>
     </>
