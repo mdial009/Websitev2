@@ -1,0 +1,35 @@
+.About-Container {
+  margin: 120px;
+}
+
+.About-Container h1 {
+  margin: 0 0 10px 4px;
+  font-size: clamp(var(--fs-sm), 5vw, var(--fs-md));
+  font-weight: 400;
+  line-height: 1.1;
+  margin-inline-start: 0px;
+  color: var(--clr-primary-5);
+}
+h2:hover {
+  text-decoration: underline;
+}
+.About-Container h2 {
+  font-size: clamp(40px, 8vw, 10px);
+  font-weight: 600;
+  line-height: 1.1;
+  color: #37bbb3;
+}
+.About-Container h3 {
+  margin-block-start: 1em;
+  line-height: 0.9;
+  font-size: clamp(20px, 8vw, 10px);
+  font-weight: 600;
+  margin-top: 10px;
+  color: #26aaa2;
+}
+.About-Container p {
+  line-height: 0.9;
+  font-weight: 200;
+  margin-top: 10px;
+  color: var(--clr-primary-8);
+}

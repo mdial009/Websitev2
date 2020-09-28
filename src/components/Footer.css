@@ -43,6 +43,7 @@
   max-width: 1000px;
   display: flex;
   justify-content: center;
+  font-size: var(--fs-sm);
 }
 
 .footer-link-wrapper {
@@ -62,6 +63,7 @@
 
 .footer-link-items h2 {
   margin-bottom: 10px;
+  font-size: var(--fs-xxl);
 }
 
 .footer-link-items > h2 {

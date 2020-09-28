@@ -107,11 +107,7 @@ Variables
 .Experience,
 .Work,
 .Contact {
-  display: flex;
-  height: 90vh;
-  align-items: center;
-  justify-content: center;
-  font-size: 3rem;
+  height: 100vh;
 }
 
 .About {
