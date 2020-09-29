@@ -10,9 +10,7 @@
   margin-inline-start: 0px;
   color: var(--clr-primary-5);
 }
-h2:hover {
-  text-decoration: underline;
-}
+
 .About-Container h2 {
   font-size: clamp(40px, 8vw, 10px);
   font-weight: 600;
@@ -62,28 +60,27 @@ h2:hover {
   background: var(--clr-primary-8);
   transition: 0.5s;
   z-index: -1;
+  box-shadow: 0 0 15px var(--clr-primary-5), 0 0 30px var(--clr-primary-6),
+    0 0 45px var(--clr-primary-7);
 }
 .card:hover:before {
   transform: rotate(20deg);
   box-shadow: 0 2px 20px rgba(0, 0, 0, 0.2);
+  filter: brightness(0.5) saturate(0) contrast(1.2) blur(20px);
 }
 .card:hover:after {
   transform: rotate(10deg);
   box-shadow: 0 2px 20px rgba(0, 0, 0, 0.2);
+  filter: brightness(0.5) saturate(0) contrast(1.2) blur(20px);
 }
 .card .imgBx {
-  position: absolute;
+  background: var(--clr-primary-8);
   top: 10px;
   left: 10px;
   bottom: 10px;
   right: 10px;
-  background: #222;
   transition: 0.5s;
   z-index: 1;
-}
-
-.card:hover .imgBx {
-  bottom: 80px;
 }
 
 .card .imgBx img {
@@ -93,6 +90,7 @@ h2:hover {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  border: 1px solid var(--clr-primary-5);
 }
 
 .card .details {
@@ -112,6 +110,11 @@ h2:hover {
   color: var(--clr-primary-9);
   text-transform: uppercase;
   text-decoration: none;
+  margin-top: 30px;
+  display: none;
+}
+.card:hover .details h2 {
+  display: block;
 }
 
 .card .details h2 span {
@@ -121,8 +124,48 @@ h2:hover {
   display: block;
   margin-top: 5px;
 }
+
+.underline h2 {
+  position: relative;
+  display: inline-block;
+  -webkit-transition: color 0.2s ease;
+  transition: color 0.2s ease;
+  margin-bottom: 5px;
+}
+
+.underline h2:hover::after,
+.underline h2:hover::before {
+  width: 100%;
+  left: 0;
+}
+
+.underline h2::after,
+.underline h2::before {
+  content: "";
+  position: absolute;
+  top: calc(100% + 5px);
+  width: 0;
+  right: 0;
+  height: 3px;
+}
+
+.underline h2::before {
+  -webkit-transition: width 0.4s cubic-bezier(0.51, 0.18, 0, 0.88) 0.1s;
+  transition: width 0.4s cubic-bezier(0.51, 0.18, 0, 0.88) 0.1s;
+  background: var(--clr-primary-5);
+}
+
+.underline h2::after {
+  -webkit-transition: width 0.2s cubic-bezier(0.29, 0.18, 0.26, 0.83);
+  transition: width 0.2s cubic-bezier(0.29, 0.18, 0.26, 0.83);
+  background: var(--clr-primary-9);
+}
+
 @media screen and (max-width: 960px) {
   .box {
     margin-top: 45px;
   }
+}
+
+@media screen and (max-width: 480px) {
 }
