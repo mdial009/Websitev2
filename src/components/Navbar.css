@@ -6,7 +6,9 @@
   align-items: center;
   font-size: var(--fs-sm);
 }
-
+h1 {
+  color: white;
+}
 .navbar-logo {
   color: var(--clr-primary-5);
   cursor: pointer;

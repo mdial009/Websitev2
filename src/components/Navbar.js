@@ -32,6 +32,7 @@ function Navbar() {
   return (
     <>
       <nav className="navbar">
+        <h1>WORK IN PROGRESS</h1>
         <Link to="/" className="navbar-logo" onClick={closeMobileMenu}>
           <img src={logo} />
         </Link>
@@ -65,7 +66,11 @@ function Navbar() {
             </Link>
           </li>
           <li className="nav-item">
-            <Link to="footer-container" className="nav-links" onClick={closeMobileMenu}>
+            <Link
+              to="footer-container"
+              className="nav-links"
+              onClick={closeMobileMenu}
+            >
               <span>04. </span>Contact
             </Link>
           </li>
