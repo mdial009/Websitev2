@@ -30,14 +30,17 @@ function Footer() {
   return (
     <div className="footer-container">
       <section className="footer-subscription">
-        <p className="footer-subscription-heading">
-          Get <span> In</span> Touch
+        <span>04. Contact</span>
+        <p className="footer-heading">
+          <h2>
+            Get <span> In</span> Touch
+          </h2>
         </p>
-        <p className="footer-subscription-text">
+        <p className="footer-text">
           Although I'<span>m</span> not currently looking for any new
           opportunities, <span>m</span>y inbox is always open. Whether you have
           a question or just want to say hi, I'll try <span>m</span>y best to
-          get back to you! at any ti<span>m</span>e Social Media 09.
+          get back to you! at any ti<span>m</span>e.
         </p>
         <div className="input-areas">
           <form>

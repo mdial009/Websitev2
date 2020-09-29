@@ -17,14 +17,16 @@
   color: #fff;
 }
 
-.footer-subscription-heading {
-  margin-bottom: 24px;
-  font-size: var(--fs-md);
+.footer-heading {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: var(--fs-xxl);
 }
 
-.footer-subscription-text {
-  margin-bottom: 24px;
+.footer-text {
+  margin-bottom: 20px;
   font-size: var(--fs-sm);
+  max-width: 700px;
 }
 
 .footer-input {
@@ -34,7 +36,6 @@
   outline: none;
   border: none;
   font-size: var(--fs-sm);
-  margin-bottom: 16px;
   border: 1px solid #fff;
 }
 
@@ -73,16 +74,12 @@
 .footer-link-items a {
   color: #fff;
   text-decoration: none;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.2rem;
 }
 
 .footer-link-items a:hover {
   color: var(--clr-primary-5);
   transition: 0.3s ease-out;
-}
-
-.footer-email-form h2 {
-  margin-bottom: 2rem;
 }
 
 .footer-input::placeholder {
