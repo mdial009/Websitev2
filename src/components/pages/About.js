@@ -23,6 +23,39 @@ export default function About() {
               </div>
             </div>
           </div>
+          <div className="skills-sections">
+        <h1 className="skills">Skills:</h1>
+        <div className="languages">
+          Languages
+          <p>JavaScript </p>
+          <p>TypeScript</p>
+          <p>HTML</p>
+          <p>CSS/Scss</p>
+          <p>Python</p>
+          <p>SQL</p>
+          <p>R</p>
+        </div>
+        <div className="Frameworks">
+          Frameworks
+          <p> React</p>
+          <p>Node</p>
+          <span> </span>
+        </div>
+        <div className="Tools">
+          Tools
+          <p>Bash</p>
+          <p>Github</p>
+          <p>Git</p>
+          <p>MongoDB</p>
+        </div>
+        <div className="Design">
+          Design
+          <p>Sketch</p>
+          <p>Wireframing</p>
+          <p>User Testing</p>
+          <p>Figma</p>
+        </div>
+      </div>
         </div>
       </div>
     </>

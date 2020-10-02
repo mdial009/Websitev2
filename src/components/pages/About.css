@@ -36,7 +36,6 @@
   display: flex;
   flex-flow: column;
   align-items: flex-end;
-  width: 100%;
   margin: 0 auto;
   margin-top: -200px;
 }
@@ -160,10 +159,23 @@
   transition: width 0.2s cubic-bezier(0.29, 0.18, 0.26, 0.83);
   background: var(--clr-primary-9);
 }
+.skills-sections {
+  display: grid;
+  grid-template-columns: 100px 120px 120px 110px 190px;
+  margin-inline-start: 0px;
+  color: var(--clr-primary-5);
+  margin: 0px;
+  margin-top: -110px;
+}
+.skills-sections h1 {
+  font-size: clamp(20px, 8vw, 10px);
+  font-weight: 600;
+}
 
 @media screen and (max-width: 960px) {
   .box {
-    margin-top: 45px;
+    margin-top: 55px;
+    align-items: center;
   }
 }
 

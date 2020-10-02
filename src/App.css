@@ -106,7 +106,7 @@ Variables
 .About,
 .Experience,
 .Work {
-  height: 100vh;
+  height: auto;
 }
 
 .About {
@@ -116,8 +116,6 @@ Variables
   background-repeat: no-repeat;
   color: #fff;
   font-size: var(--fs-md);
-  display: grid;
-  width: auto;
 }
 .Experience {
   /*background-image: url("./images/img-1.jpg"); */
