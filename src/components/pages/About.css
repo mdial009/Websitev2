@@ -16,6 +16,7 @@
   font-weight: 600;
   line-height: 1.1;
   color: #37bbb3;
+  
 }
 .About-Container h3 {
   margin-block-start: 1em;
@@ -175,6 +176,7 @@
   margin: auto;
   width: 60%;
   padding: 10px;
+  
 }
 .aboutme h2 {
   font-weight: 900;
@@ -182,6 +184,13 @@
   color: white;
   margin: auto;
   width: 30%;
+  padding: auto auto auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
 }
 
 @media screen and (max-width: 960px) {

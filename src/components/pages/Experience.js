@@ -41,7 +41,7 @@ export default function Experience() {
       transform: 'rotate(180deg)',
     },
     avatar: {
-      background: 'linear-gradient(45deg, #FE6B8B 30%, #FF8E53 90%)'
+      background: 'linear-gradient(45deg, #48ccc4 10%, #48cae4 50%)'
     },
   }));
   
@@ -54,12 +54,11 @@ export default function Experience() {
     };
   return (
     <>
-      <div className="Experience">02. Experience</div>
-
+      <div className="Experience"><span>02. </span>Experience
       <Card className={classes.root}>
       <CardHeader
         avatar={
-          <Avatar aria-label="recipe" className={classes.avatar}>
+          <Avatar aria-label="recbookipe" className={classes.avatar}>
             IBM
           </Avatar>
         }
@@ -102,7 +101,8 @@ export default function Experience() {
           </Typography>
         </CardContent>
       </Collapse>
-    </Card>    
+    </Card>
+  </div>      
   </>
   );
 }
