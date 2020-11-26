@@ -7,6 +7,7 @@ import Footer from "./components/Footer";
 import Experience from "./components/pages/Experience";
 import Work from "./components/pages/Work";
 
+
 function App() {
   return (
     <Router>
@@ -19,6 +20,7 @@ function App() {
       <Work />
       <Footer />
     </Router>
+    
   );
 }
 
