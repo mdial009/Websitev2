@@ -2,10 +2,10 @@ import React from "react";
 import Navbar from "./components/Navbar";
 import "./App.css";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import About from "./components/pages/About";
+import About from "./components/sections/About";
 import Footer from "./components/Footer";
-import Experience from "./components/pages/Experience";
-import Work from "./components/pages/Work";
+import Experience from "./components/sections/Experience";
+import Work from "./components/sections/Work";
 
 
 function App() {
