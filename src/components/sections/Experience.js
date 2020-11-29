@@ -6,6 +6,7 @@ import MCCard from "../../components/cards/MCCard.js";
 import ITSS from "../../components/cards/ITSS.js";
 import Staples from "../../components/cards/StaplesCard.js";
 import Speedway from "../../components/cards/SpeedwayCard.js";
+import TA from "../../components/cards/TACard.js";
 
 
 export default function Experience() {
@@ -24,6 +25,8 @@ export default function Experience() {
         <Staples />
           <div className="Spacediv"></div>
         <Speedway />
+          <div className="Spacediv"></div>
+        <TA />
       </div>
     </>
   );
