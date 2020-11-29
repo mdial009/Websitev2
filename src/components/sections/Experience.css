@@ -11,15 +11,14 @@
 .Works {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
+  flex-shrink: 3; /* default 1 */
+
   justify-content: center;
-  align-items: center; 
-  font-size: 13px
+  align-items: center;
+  font-size: 13px;
 }
 
 .Spacediv {
   margin-left: 20px;
-}
-
-.MuiCardHeader-subheader{
-  color: orange;
 }

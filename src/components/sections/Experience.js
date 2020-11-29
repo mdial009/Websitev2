@@ -6,6 +6,7 @@ import { makeStyles } from "@material-ui/core/styles";
 import IBMCard from "../../components/cards/IBMCard.js";
 import MCCard from "../../components/cards/MCCard.js";
 import ITSS from "../../components/cards/ITSS.js";
+import Staples from "../../components/cards/StaplesCard.js";
 
 
 export default function Experience() {
@@ -20,6 +21,8 @@ export default function Experience() {
         <MCCard />
         <div className="Spacediv"></div>
         <ITSS />
+         <div className="Spacediv"></div>
+        <Staples />
       </div>
     </>
   );
