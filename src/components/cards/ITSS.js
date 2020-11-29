@@ -11,9 +11,9 @@ import Avatar from "@material-ui/core/Avatar";
 import IconButton from "@material-ui/core/IconButton";
 import Typography from "@material-ui/core/Typography";
 import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
-import IBM from "../../images/ibm.png";
+import ITSS from "../../images/SUNYPlattsburgh.jpg";
 
-export default function IBMCard() {
+export default function ITSSCard() {
   const useStyles = makeStyles((theme) => ({
     root: {
       maxWidth: 300,
@@ -53,12 +53,22 @@ export default function IBMCard() {
 
   return (
     <Card className={classes.root}>
-      <CardMedia className={classes.media} image={IBM} title="IBM" />
+      <CardMedia
+        className={classes.media}
+        image={ITSS}
+        title="Information Technology Support Specialist"
+      />
       <CardContent>
-        <Typography variant="inherit" color="inherit" component="p" className={classes.Typography}>
-          IBM <span className={classes.span}></span>Cyber Security Consultant
-          Plattsburgh, New York, <span className={classes.span}></span>United
-          States <span className={classes.span}></span>Sep 2019 - Dec 2019
+        <Typography
+          variant="inherit"
+          color="inherit"
+          component="p"
+          className={classes.Typography}
+        >
+          SUNY Plattsburgh <span className={classes.span}></span>
+          IT Support Specialist Plattsburgh, New York,{" "}
+          <span className={classes.span}></span>United States{" "}
+          <span className={classes.span}></span>Feb 2020 - May 2020
         </Typography>
       </CardContent>
       <CardActions disableSpacing>
@@ -75,20 +85,17 @@ export default function IBMCard() {
       </CardActions>
       <Collapse in={expanded} timeout="auto" unmountOnExit>
         <CardContent>
-          <Typography paragraph className={classes.paragraph} variant="inherit">
-            • Presented security solutions to past breaches in an Agile manner
-            in a team that assisted in the mitigation of the effect of data loss
-            or privacy invasion.
+          <Typography className={classes.paragraph} paragraph variant="inherit">
+            • Provided Tier 1 IT support to non-technical internal users through
+            desk side support services.
           </Typography>
-          <Typography paragraph className={classes.paragraph} variant="inherit">
-            • Researched past data breaches and present them to professional
-            security mentors with a solution with IBM security products and
-            services.
+          <Typography className={classes.paragraph} paragraph variant="inherit">
+            • Conducted in-depth product and issue resolution research to
+            address customer concerns.
           </Typography>
-          <Typography paragraph className={classes.paragraph} variant="inherit">
-            • Learned how IBM’s integrated tools such as Qradar, SOAR, and IBM
-            BigFix could assist corporations presently and in the future to
-            secure customer data.
+          <Typography className={classes.paragraph} paragraph variant="inherit">
+            • Maintained historical records by documenting system changes and
+            revisions.
           </Typography>
         </CardContent>
       </Collapse>

@@ -16,7 +16,8 @@ import MercyCenter from "../../images/Mercy Center .webp";
 export default function MCCard() {
   const useStyles = makeStyles((theme) => ({
     root: {
-      maxWidth: 350,
+      maxWidth: 300,
+      backgroundColor: "#0a192f",
     },
     media: {
       height: 30,
@@ -33,11 +34,14 @@ export default function MCCard() {
     expandOpen: {
       transform: "rotate(180deg)",
     },
-    avatar: {
-      background: "linear-gradient(45deg, #48ccc4 10%, #48cae4 50%)",
-    },
-    span:{
+    span: {
       marginLeft: "900px",
+    },
+    Typography: {
+      color: "#0096c7",
+    },
+    paragraph: {
+      color: "#0096c7",
     },
   }));
 
@@ -50,23 +54,20 @@ export default function MCCard() {
 
   return (
     <Card className={classes.root}>
-      <CardHeader
-        avatar={
-          <Avatar aria-label="recbookipe" className={classes.avatar}>
-            MC
-          </Avatar>
-        }
-        title="Mercy Center"
-        subheader="Teachers Aide"
-      />
       <CardMedia
         className={classes.media}
         image={MercyCenter}
         title="Mercy Center"
       />
       <CardContent>
-        <Typography variant="inherit" color="inherit" component="p">
-          Bronx, New York, <span className={classes.span}></span>United States <span className={classes.span}></span>Jul 2016 - Aug 2018
+        <Typography
+          variant="inherit"
+          color="inherit"
+          component="p"
+          className={classes.Typography}
+        >
+         Mercy Center <span className={classes.span}></span>Teacher Aide <span className={classes.span}></span>Bronx, New York, <span className={classes.span}></span>United States{" "}
+          <span className={classes.span}></span>Jul 2016 - Aug 2018
         </Typography>
       </CardContent>
       <CardActions disableSpacing>
@@ -83,15 +84,15 @@ export default function MCCard() {
       </CardActions>
       <Collapse in={expanded} timeout="auto" unmountOnExit>
         <CardContent>
-          <Typography paragraph>
+          <Typography className={classes.paragraph} paragraph variant="inherit">
             • Assisted children with daily homework tasks by uncovering and
             removing obstacles to success.
           </Typography>
-          <Typography paragraph>
+          <Typography className={classes.paragraph} paragraph variant="inherit">
             • Tutored over 20 struggling, average and advanced students in math
             and reading course materials.
           </Typography>
-          <Typography paragraph>
+          <Typography className={classes.paragraph} paragraph variant="inherit">
             • Displayed positive role-modeling, high energy, engagement, and
             good communication skills with children.
           </Typography>
