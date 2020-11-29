@@ -11,7 +11,7 @@ import Typography from "@material-ui/core/Typography";
 import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
 import Staples from "../../images/Staples.png";
 
-export default function ITSSCard() {
+export default function StaplesCard() {
   const useStyles = makeStyles((theme) => ({
     root: {
       maxWidth: 300,

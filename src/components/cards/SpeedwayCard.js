@@ -2,18 +2,16 @@ import * as React from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import clsx from "clsx";
 import Card from "@material-ui/core/Card";
-import CardHeader from "@material-ui/core/CardHeader";
 import CardMedia from "@material-ui/core/CardMedia";
 import CardContent from "@material-ui/core/CardContent";
 import CardActions from "@material-ui/core/CardActions";
 import Collapse from "@material-ui/core/Collapse";
-import Avatar from "@material-ui/core/Avatar";
 import IconButton from "@material-ui/core/IconButton";
 import Typography from "@material-ui/core/Typography";
 import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
-import MercyCenter from "../../images/MercyCenter.jpeg";
+import Speedway from "../../images/Speedway.jpeg";
 
-export default function MCCard() {
+export default function SpeedwayCard() {
   const useStyles = makeStyles((theme) => ({
     root: {
       maxWidth: 300,
@@ -22,7 +20,6 @@ export default function MCCard() {
     media: {
       height: 30,
       paddingTop: "56.25%", // 16:9
-      paddingLeft: "515px",
     },
     expand: {
       transform: "rotate(0deg)",
@@ -56,8 +53,8 @@ export default function MCCard() {
     <Card className={classes.root}>
       <CardMedia
         className={classes.media}
-        image={MercyCenter}
-        title="Mercy Center"
+        image={Speedway}
+        title="Retail Sales Consultant"
       />
       <CardContent>
         <Typography
@@ -66,8 +63,10 @@ export default function MCCard() {
           component="p"
           className={classes.Typography}
         >
-         Mercy Center <span className={classes.span}></span>Teacher Aide <span className={classes.span}></span>Bronx, New York, <span className={classes.span}></span>United States{" "}
-          <span className={classes.span}></span>Jul 2016 - Aug 2018
+          Speedway LLC <span className={classes.span}></span>
+          Retail Sales Consultant <span className={classes.span}></span>Bronx, New York,{" "}
+          <span className={classes.span}></span>United States{" "}
+          <span className={classes.span}></span>Jun 2020 - Present
         </Typography>
       </CardContent>
       <CardActions disableSpacing>
@@ -85,16 +84,15 @@ export default function MCCard() {
       <Collapse in={expanded} timeout="auto" unmountOnExit>
         <CardContent>
           <Typography className={classes.paragraph} paragraph variant="inherit">
-            • Assisted children with daily homework tasks by uncovering and
-            removing obstacles to success.
+            • Provided accurate information about promotions, customer programs, and products, helping drive high customer retention.
+
           </Typography>
           <Typography className={classes.paragraph} paragraph variant="inherit">
-            • Tutored over 20 struggling, average and advanced students in math
-            and reading course materials.
+            • Approached each problem with a fresh mind and analytical strategies to quickly resolve concerns.
+
           </Typography>
           <Typography className={classes.paragraph} paragraph variant="inherit">
-            • Displayed positive role-modeling, high energy, engagement, and
-            good communication skills with children.
+            • Pursued resolutions to achieve complete customer satisfaction, including tracking down hard-to-find merchandise at diverse locations.
           </Typography>
         </CardContent>
       </Collapse>
