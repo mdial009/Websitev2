@@ -1,19 +1,16 @@
 .Experience {
   padding: auto auto auto;
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
-  font-weight: 600;
-  font-size: clamp(22px, 8vw, 5px);
 }
 
 .Works {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  flex-shrink: 3; /* default 1 */
-
+  margin-bottom: 24px;
+  padding: 24px;
   justify-content: center;
   align-items: center;
   font-size: 13px;

@@ -57,9 +57,7 @@ export default function About() {
             </div>
           </div>
           <div className="aboutme">
-            <h2>
-              <span>01. </span>Background
-            </h2>
+            <span className="background">01. Background</span>
             <p>
               Hi, I am Madany Diallo. I was born in Africa, in Conkary, Guinea.
               I moved to the Bronx in New York City when I was seven years old
