@@ -14,7 +14,7 @@ import Staples from "../../images/Staples.png";
 export default function StaplesCard() {
   const useStyles = makeStyles((theme) => ({
     root: {
-      maxWidth: 300,
+      maxWidth: 346,
       backgroundColor: "#0a192f",
     },
     media: {
@@ -63,10 +63,10 @@ export default function StaplesCard() {
           component="p"
           className={classes.Typography}
         >
-          SUNY Plattsburgh <span className={classes.span}></span>
-          Sales Associate <span className={classes.span}></span>Plattsburgh, New York,{" "}
-          <span className={classes.span}></span>United States{" "}
-          <span className={classes.span}></span>Nov 2017 - May 2020
+          Staples LLC <span className={classes.span}></span>
+          Sales Associate <span className={classes.span}></span>Plattsburgh, New
+          York, United States <span className={classes.span}></span>Nov 2017 -
+          May 2020
         </Typography>
       </CardContent>
       <CardActions disableSpacing>

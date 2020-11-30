@@ -16,7 +16,7 @@ import ITSS from "../../images/SUNYPlattsburgh.jpg";
 export default function ITSSCard() {
   const useStyles = makeStyles((theme) => ({
     root: {
-      maxWidth: 300,
+      maxWidth: 346,
       backgroundColor: "#0a192f",
     },
     media: {
@@ -66,8 +66,8 @@ export default function ITSSCard() {
           className={classes.Typography}
         >
           SUNY Plattsburgh <span className={classes.span}></span>
-          IT Support Specialist Plattsburgh, New York,{" "}
-          <span className={classes.span}></span>United States{" "}
+          IT Support Specialist <span className={classes.span}></span>{" "}
+          Plattsburgh, New York, United States{" "}
           <span className={classes.span}></span>Feb 2020 - May 2020
         </Typography>
       </CardContent>

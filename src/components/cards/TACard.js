@@ -16,7 +16,7 @@ import TA from "../../images/SUNYPlattsburgh.jpg";
 export default function ITSSCard() {
   const useStyles = makeStyles((theme) => ({
     root: {
-      maxWidth: 300,
+      maxWidth: 346,
       backgroundColor: "#0a192f",
     },
     media: {
@@ -67,8 +67,8 @@ export default function ITSSCard() {
         >
           SUNY Plattsburgh <span className={classes.span}></span>
           Technical Assistant <span className={classes.span}></span>Plattsburgh,
-          New York, <span className={classes.span}></span>United States{" "}
-          <span className={classes.span}></span>Jan 2019 - May 2019
+          New York, United States <span className={classes.span}></span>Jan 2019
+          - May 2019
         </Typography>
       </CardContent>
       <CardActions disableSpacing>

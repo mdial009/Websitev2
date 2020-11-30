@@ -14,7 +14,7 @@ import Speedway from "../../images/Speedway.jpeg";
 export default function SpeedwayCard() {
   const useStyles = makeStyles((theme) => ({
     root: {
-      maxWidth: 300,
+      maxWidth: 346,
       backgroundColor: "#0a192f",
     },
     media: {
@@ -64,9 +64,9 @@ export default function SpeedwayCard() {
           className={classes.Typography}
         >
           Speedway LLC <span className={classes.span}></span>
-          Retail Sales Consultant <span className={classes.span}></span>Bronx, New York,{" "}
-          <span className={classes.span}></span>United States{" "}
-          <span className={classes.span}></span>Jun 2020 - Present
+          Retail Sales Consultant <span className={classes.span}></span>Bronx,
+          New York, United States <span className={classes.span}></span>Jun
+          2020 - Present
         </Typography>
       </CardContent>
       <CardActions disableSpacing>
@@ -84,15 +84,17 @@ export default function SpeedwayCard() {
       <Collapse in={expanded} timeout="auto" unmountOnExit>
         <CardContent>
           <Typography className={classes.paragraph} paragraph variant="inherit">
-            • Provided accurate information about promotions, customer programs, and products, helping drive high customer retention.
-
+            • Provided accurate information about promotions, customer programs,
+            and products, helping drive high customer retention.
           </Typography>
           <Typography className={classes.paragraph} paragraph variant="inherit">
-            • Approached each problem with a fresh mind and analytical strategies to quickly resolve concerns.
-
+            • Approached each problem with a fresh mind and analytical
+            strategies to quickly resolve concerns.
           </Typography>
           <Typography className={classes.paragraph} paragraph variant="inherit">
-            • Pursued resolutions to achieve complete customer satisfaction, including tracking down hard-to-find merchandise at diverse locations.
+            • Pursued resolutions to achieve complete customer satisfaction,
+            including tracking down hard-to-find merchandise at diverse
+            locations.
           </Typography>
         </CardContent>
       </Collapse>

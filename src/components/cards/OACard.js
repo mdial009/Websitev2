@@ -11,9 +11,9 @@ import Avatar from "@material-ui/core/Avatar";
 import IconButton from "@material-ui/core/IconButton";
 import Typography from "@material-ui/core/Typography";
 import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
-import IBM from "../../images/ibm.png";
+import OA from "../../images/OfficeAssistant.png";
 
-export default function IBMCard() {
+export default function ITSSCard() {
   const useStyles = makeStyles((theme) => ({
     root: {
       maxWidth: 346,
@@ -53,7 +53,11 @@ export default function IBMCard() {
 
   return (
     <Card className={classes.root}>
-      <CardMedia className={classes.media} image={IBM} title="IBM" />
+      <CardMedia
+        className={classes.media}
+        image={OA}
+        title="Office Assistant"
+      />
       <CardContent>
         <Typography
           variant="inherit"
@@ -61,10 +65,9 @@ export default function IBMCard() {
           component="p"
           className={classes.Typography}
         >
-          IBM <span className={classes.span}></span>Cyber Security Consultant{" "}
-          <span className={classes.span}></span>
-          Plattsburgh, New York, United States{" "}
-          <span className={classes.span}></span>Sep 2019 - Dec 2019
+          Columbia University Medical Center Office Assistant{" "}
+          <span className={classes.span}></span>Manhattan, New York, United
+          States <span className={classes.span}></span>Jul 2018 - Aug 2018
         </Typography>
       </CardContent>
       <CardActions disableSpacing>
@@ -81,20 +84,18 @@ export default function IBMCard() {
       </CardActions>
       <Collapse in={expanded} timeout="auto" unmountOnExit>
         <CardContent>
-          <Typography paragraph className={classes.paragraph} variant="inherit">
-            • Presented security solutions to past breaches in an Agile manner
-            in a team that assisted in the mitigation of the effect of data loss
-            or privacy invasion.
+          <Typography className={classes.paragraph} paragraph variant="inherit">
+            • Interacted with customers professionally by phone, email, or
+            in-person to provide information and directed to desired staff
+            members.
           </Typography>
-          <Typography paragraph className={classes.paragraph} variant="inherit">
-            • Researched past data breaches and present them to professional
-            security mentors with a solution with IBM security products and
-            services.
+          <Typography className={classes.paragraph} paragraph variant="inherit">
+            • Streamlined processing procedures for various financial and
+            employee documents to improve traceability.
           </Typography>
-          <Typography paragraph className={classes.paragraph} variant="inherit">
-            • Learned how IBM’s integrated tools such as Qradar, SOAR, and IBM
-            BigFix could assist corporations presently and in the future to
-            secure customer data.
+          <Typography className={classes.paragraph} paragraph variant="inherit">
+            • Tracked and recorded expenses and reconciled accounts to maintain
+            accurate, current, and compliant financial records.
           </Typography>
         </CardContent>
       </Collapse>

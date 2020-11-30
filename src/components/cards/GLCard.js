@@ -2,18 +2,16 @@ import * as React from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import clsx from "clsx";
 import Card from "@material-ui/core/Card";
-import CardHeader from "@material-ui/core/CardHeader";
 import CardMedia from "@material-ui/core/CardMedia";
 import CardContent from "@material-ui/core/CardContent";
 import CardActions from "@material-ui/core/CardActions";
 import Collapse from "@material-ui/core/Collapse";
-import Avatar from "@material-ui/core/Avatar";
 import IconButton from "@material-ui/core/IconButton";
 import Typography from "@material-ui/core/Typography";
 import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
-import IBM from "../../images/ibm.png";
+import GL from "../../images/CDIM .png";
 
-export default function IBMCard() {
+export default function GLCard() {
   const useStyles = makeStyles((theme) => ({
     root: {
       maxWidth: 346,
@@ -53,7 +51,11 @@ export default function IBMCard() {
 
   return (
     <Card className={classes.root}>
-      <CardMedia className={classes.media} image={IBM} title="IBM" />
+      <CardMedia
+        className={classes.media}
+        image={GL}
+        title="Group Lead/Computer Teacher"
+      />
       <CardContent>
         <Typography
           variant="inherit"
@@ -61,10 +63,12 @@ export default function IBMCard() {
           component="p"
           className={classes.Typography}
         >
-          IBM <span className={classes.span}></span>Cyber Security Consultant{" "}
+          Christ Disciples Int'l Ministries, Inc.{" "}
           <span className={classes.span}></span>
-          Plattsburgh, New York, United States{" "}
-          <span className={classes.span}></span>Sep 2019 - Dec 2019
+          <span className={classes.span}></span>
+          Group Lead/Computer Teacher <span className={classes.span}></span>
+          Bronx, New York, United States{" "}
+          <span className={classes.span}></span>Jul 2019 - Aug 2019
         </Typography>
       </CardContent>
       <CardActions disableSpacing>
@@ -81,20 +85,17 @@ export default function IBMCard() {
       </CardActions>
       <Collapse in={expanded} timeout="auto" unmountOnExit>
         <CardContent>
-          <Typography paragraph className={classes.paragraph} variant="inherit">
-            • Presented security solutions to past breaches in an Agile manner
-            in a team that assisted in the mitigation of the effect of data loss
-            or privacy invasion.
+          <Typography className={classes.paragraph} paragraph variant="inherit">
+            • Reorganized and enhanced employee training closing knowledge gaps
+            and boost group performance.
           </Typography>
-          <Typography paragraph className={classes.paragraph} variant="inherit">
-            • Researched past data breaches and present them to professional
-            security mentors with a solution with IBM security products and
-            services.
+          <Typography className={classes.paragraph} paragraph variant="inherit">
+            • Developed a quality-driven culture to boost team performance and
+            efficiency while maintaining a highly satisfied workforce.
           </Typography>
-          <Typography paragraph className={classes.paragraph} variant="inherit">
-            • Learned how IBM’s integrated tools such as Qradar, SOAR, and IBM
-            BigFix could assist corporations presently and in the future to
-            secure customer data.
+          <Typography className={classes.paragraph} paragraph variant="inherit">
+            • Planned and implemented a curriculum to teach up-to-date
+            technology to 10 students.
           </Typography>
         </CardContent>
       </Collapse>

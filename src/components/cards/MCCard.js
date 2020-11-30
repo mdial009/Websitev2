@@ -16,7 +16,7 @@ import MercyCenter from "../../images/MercyCenter.jpeg";
 export default function MCCard() {
   const useStyles = makeStyles((theme) => ({
     root: {
-      maxWidth: 300,
+      maxWidth: 346,
       backgroundColor: "#0a192f",
     },
     media: {
@@ -66,7 +66,8 @@ export default function MCCard() {
           component="p"
           className={classes.Typography}
         >
-         Mercy Center <span className={classes.span}></span>Teacher Aide <span className={classes.span}></span>Bronx, New York, <span className={classes.span}></span>United States{" "}
+          Mercy Center <span className={classes.span}></span>Teacher Aide{" "}
+          <span className={classes.span}></span>Bronx, New York, United States{" "}
           <span className={classes.span}></span>Jul 2016 - Aug 2018
         </Typography>
       </CardContent>

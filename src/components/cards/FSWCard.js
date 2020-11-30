@@ -2,18 +2,16 @@ import * as React from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import clsx from "clsx";
 import Card from "@material-ui/core/Card";
-import CardHeader from "@material-ui/core/CardHeader";
 import CardMedia from "@material-ui/core/CardMedia";
 import CardContent from "@material-ui/core/CardContent";
 import CardActions from "@material-ui/core/CardActions";
 import Collapse from "@material-ui/core/Collapse";
-import Avatar from "@material-ui/core/Avatar";
 import IconButton from "@material-ui/core/IconButton";
 import Typography from "@material-ui/core/Typography";
 import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
-import IBM from "../../images/ibm.png";
+import GL from "../../images/CompassGroup.jpg";
 
-export default function IBMCard() {
+export default function GLCard() {
   const useStyles = makeStyles((theme) => ({
     root: {
       maxWidth: 346,
@@ -53,7 +51,11 @@ export default function IBMCard() {
 
   return (
     <Card className={classes.root}>
-      <CardMedia className={classes.media} image={IBM} title="IBM" />
+      <CardMedia
+        className={classes.media}
+        image={GL}
+        title="Food Service Worker"
+      />
       <CardContent>
         <Typography
           variant="inherit"
@@ -61,10 +63,12 @@ export default function IBMCard() {
           component="p"
           className={classes.Typography}
         >
-          IBM <span className={classes.span}></span>Cyber Security Consultant{" "}
+          Compass Group North America <span className={classes.span}></span>
           <span className={classes.span}></span>
+          Food Service Worker <span className={classes.span}></span>
           Plattsburgh, New York, United States{" "}
-          <span className={classes.span}></span>Sep 2019 - Dec 2019
+          <span className={classes.span}></span>
+          Nov 2016 - May 2017
         </Typography>
       </CardContent>
       <CardActions disableSpacing>
@@ -81,20 +85,16 @@ export default function IBMCard() {
       </CardActions>
       <Collapse in={expanded} timeout="auto" unmountOnExit>
         <CardContent>
-          <Typography paragraph className={classes.paragraph} variant="inherit">
-            • Presented security solutions to past breaches in an Agile manner
-            in a team that assisted in the mitigation of the effect of data loss
-            or privacy invasion.
+          <Typography className={classes.paragraph} paragraph variant="inherit">
+            • Replenished condiments, beverages, and supplies while maintaining
+            the cleanliness of service areas.
           </Typography>
-          <Typography paragraph className={classes.paragraph} variant="inherit">
-            • Researched past data breaches and present them to professional
-            security mentors with a solution with IBM security products and
-            services.
+          <Typography className={classes.paragraph} paragraph variant="inherit">
+            • Cooked batches of food according to standard recipes.
           </Typography>
-          <Typography paragraph className={classes.paragraph} variant="inherit">
-            • Learned how IBM’s integrated tools such as Qradar, SOAR, and IBM
-            BigFix could assist corporations presently and in the future to
-            secure customer data.
+          <Typography className={classes.paragraph} paragraph variant="inherit">
+            • Inspected equipment such as refrigerators and warming lamps every
+            hour to check compliance with safe operating levels.
           </Typography>
         </CardContent>
       </Collapse>
