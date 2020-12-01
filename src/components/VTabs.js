@@ -75,19 +75,23 @@ export default function ScrollableTabsButtonAuto() {
           scrollButtons="auto"
         >
           <Tab label="Github-User-Project" {...a11yProps(0)} />
-          <Tab label="Item Two" {...a11yProps(1)} />
-          <Tab label="Item Three" {...a11yProps(2)} />
-          <Tab label="Item Four" {...a11yProps(3)} />
-          <Tab label="Item Five" {...a11yProps(4)} />
-          <Tab label="Item Six" {...a11yProps(5)} />
-          <Tab label="Item Seven" {...a11yProps(6)} />
+          <Tab label="Project Two" {...a11yProps(1)} />
+          <Tab label="Project Three" {...a11yProps(2)} />
+          <Tab label="Project Four" {...a11yProps(3)} />
+          <Tab label="Project Five" {...a11yProps(4)} />
+          <Tab label="Project Six" {...a11yProps(5)} />
+          <Tab label="Project Seven" {...a11yProps(6)} />
         </Tabs>
       </AppBar>
       <TabPanel className={classes.tabs} value={value} index={0}>
         <img src={IBM} alt="boohoo"></img>
-        <div className={classes.tabs}>React CSS HTML JavaScript</div><div> A React App that lets you search up
-        different users on GitHub using GitHub API. You are able to see
-        different stats about the users(Followers/Following, Repos)</div>
+        <div className={classes.tabs}>React CSS HTML JavaScript</div>
+        <div>
+          {" "}
+          A React App that lets you search up different users on GitHub using
+          GitHub API. You are able to see different stats about the
+          users(Followers/Following, Repos)
+        </div>
       </TabPanel>
       <TabPanel value={value} index={1}>
         Project Two
