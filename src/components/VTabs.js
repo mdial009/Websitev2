@@ -53,6 +53,18 @@ const useStyles = makeStyles((theme) => ({
     textAlign: "center",
     alignitems: "center",
   },
+  column: {
+    float: "left",
+    width: "100%",
+    padding: "10px",
+    height: "auto",
+    display: "flex",
+  },
+  row: {
+    content: "",
+    display: "table",
+    clear: "both",
+  },
 }));
 
 export default function ScrollableTabsButtonAuto() {
@@ -75,7 +87,7 @@ export default function ScrollableTabsButtonAuto() {
           scrollButtons="auto"
         >
           <Tab label="Github-User-Project" {...a11yProps(0)} />
-          <Tab label="Project Two" {...a11yProps(1)} />
+          <Tab label="SUNY Plattsburgh" {...a11yProps(1)} />
           <Tab label="Project Three" {...a11yProps(2)} />
           <Tab label="Project Four" {...a11yProps(3)} />
           <Tab label="Project Five" {...a11yProps(4)} />
@@ -93,8 +105,53 @@ export default function ScrollableTabsButtonAuto() {
           users(Followers/Following, Repos)
         </div>
       </TabPanel>
-      <TabPanel value={value} index={1}>
-        Project Two
+      <TabPanel value={value} index={1} class={classes.row}>
+        <div class={classes.row}>
+          <div className={classes.column}>
+            <p>
+              Technical Assistant @{" "}
+              <span>
+                <a href="https://www.plattsburgh.edu/">SUNY Plattsburgh </a>
+              </span>
+              <p>Jan 2019 - May 2019</p>
+              <li>
+                Served as the primary point of contact for incoming media calls,
+                including requests for meetings and interviews with company
+                executives and experts.
+              </li>
+              <li>
+                Assisted patrons with library's computers and provided
+                information on logging onto the Internet.
+              </li>
+              <li>
+                Closely monitored front desk visitors to maintain a secure and
+                clean environment.
+              </li>
+            </p>
+          </div>
+          <div className={classes.column}>
+            <div>
+              {" "}
+              IT Support Specialist @{" "}
+              <span>
+                <a href="https://www.plattsburgh.edu/">SUNY Plattsburgh </a>
+              </span>
+              <p>Feb 2020 - May 2020</p>
+              <li>
+                Provided Tier 1 IT support to non-technical internal users
+                through desk side support services.
+              </li>
+              <li>
+                Conducted in-depth product and issue resolution research to
+                address customer concerns.
+              </li>
+              <li>
+                Maintained historical records by documenting system changes and
+                revisions.
+              </li>
+            </div>
+          </div>
+        </div>
       </TabPanel>
       <TabPanel value={value} index={2}>
         Project Three
