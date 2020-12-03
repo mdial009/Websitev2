@@ -11,12 +11,12 @@ import Avatar from "@material-ui/core/Avatar";
 import IconButton from "@material-ui/core/IconButton";
 import Typography from "@material-ui/core/Typography";
 import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
-import IBM from "../../images/ibm.png";
+import IBM from "../../images/PortfolioWebsite.png";
 
 export default function IBMCard() {
   const useStyles = makeStyles((theme) => ({
     root: {
-      maxWidth: 346,
+      maxWidth: 546,
       backgroundColor: "#0a192f",
     },
     media: {
@@ -36,11 +36,17 @@ export default function IBMCard() {
     span: {
       marginLeft: "900px",
     },
+    spans: {
+      marginLeft: "9px",
+    },
     Typography: {
       color: "#0096c7",
     },
     paragraph: {
       color: "#0096c7",
+    },
+    Typographys: {
+      color: "#0066c7",
     },
   }));
 
@@ -61,10 +67,31 @@ export default function IBMCard() {
           component="p"
           className={classes.Typography}
         >
-          IBM <span className={classes.span}></span>Cyber Security Consultant{" "}
+          Portfolio Website v1 <span className={classes.span}></span>
           <span className={classes.span}></span>
-          Plattsburgh, New York, United States{" "}
-          <span className={classes.span}></span>Sep 2019 - Dec 2019
+          SCSS 28.2% <span className={classes.span}></span> Less 25.6%{" "}
+          <span className={classes.span}></span>CSS 21.8%{" "}
+          <span className={classes.span}></span>JavaScript 18.4%{" "}
+          <span className={classes.span}></span>HTML 6.0%{" "}
+          <span className={classes.span}></span>
+        </Typography>
+        <Typography
+          variant="inherit"
+          color="inherit"
+          component="p"
+          align="center"
+        >
+          <div className={classes.Typographys}>
+            <a href="https://mdial009.github.io/">
+              <i class=""></i>
+              <span>Website</span>
+            </a>
+            <span className={classes.spans}></span>
+            <a href="https://mdial009.github.io/">
+              <i class="https://github.com/mdial009/mdial009.github.io"></i>
+              <span>Github</span>
+            </a>
+          </div>
         </Typography>
       </CardContent>
       <CardActions disableSpacing>
@@ -82,19 +109,8 @@ export default function IBMCard() {
       <Collapse in={expanded} timeout="auto" unmountOnExit>
         <CardContent>
           <Typography paragraph className={classes.paragraph} variant="inherit">
-            • Presented security solutions to past breaches in an Agile manner
-            in a team that assisted in the mitigation of the effect of data loss
-            or privacy invasion.
-          </Typography>
-          <Typography paragraph className={classes.paragraph} variant="inherit">
-            • Researched past data breaches and present them to professional
-            security mentors with a solution with IBM security products and
-            services.
-          </Typography>
-          <Typography paragraph className={classes.paragraph} variant="inherit">
-            • Learned how IBM’s integrated tools such as Qradar, SOAR, and IBM
-            BigFix could assist corporations presently and in the future to
-            secure customer data.
+            This is a my portofilio website displaying some of my skills in
+            JS,HTML and CSS
           </Typography>
         </CardContent>
       </Collapse>

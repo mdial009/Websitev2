@@ -2,21 +2,4 @@
   padding: auto auto auto;
   display: flex;
   justify-content: center;
-  align-items: center;
 }
-
-.Works {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  margin-bottom: 24px;
-  padding: 24px;
-  justify-content: center;
-  align-items: center;
-  font-size: 13px;
-}
-
-.Spacediv {
-  margin-left: 20px;
-}
-
