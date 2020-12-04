@@ -6,7 +6,6 @@ import Tabs from "@material-ui/core/Tabs";
 import Tab from "@material-ui/core/Tab";
 import Typography from "@material-ui/core/Typography";
 import Box from "@material-ui/core/Box";
-import IBM from "../images/GithubUserProject.png";
 
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
@@ -65,6 +64,9 @@ const useStyles = makeStyles((theme) => ({
     display: "table",
     clear: "both",
   },
+  underline: {
+    textDecoration: "none",
+  },
 }));
 
 export default function ScrollableTabsButtonAuto() {
@@ -103,10 +105,10 @@ export default function ScrollableTabsButtonAuto() {
         <div class={classes.row}>
           <div className={classes.column}>
             <p>
-              Cyber Security Consultant @{" "}
-              <span>
-                <a href="https://ibm.com/">IBM </a>
-              </span>
+              Cyber Security Consultant @
+              <a className={classes.underline} href="https://ibm.com/">
+                <span> IBM</span>
+              </a>
               <p>Sep 2019 - Dec 2019</p>
               <li>
                 Presented security solutions to past breaches in an Agile manner
@@ -131,10 +133,13 @@ export default function ScrollableTabsButtonAuto() {
         <div class={classes.row}>
           <div className={classes.column}>
             <p>
-              Technical Assistant @{" "}
-              <span>
-                <a href="https://www.plattsburgh.edu/">SUNY Plattsburgh </a>
-              </span>
+              Technical Assistant @
+              <a
+                className={classes.underline}
+                href="https://www.plattsburgh.edu/"
+              >
+                <span> SUNY Plattsburgh</span>
+              </a>
               <p>Jan 2019 - May 2019</p>
               <li>
                 Served as the primary point of contact for incoming media calls,
@@ -153,11 +158,13 @@ export default function ScrollableTabsButtonAuto() {
           </div>
           <div className={classes.column}>
             <div>
-              {" "}
-              IT Support Specialist @{" "}
-              <span>
-                <a href="https://www.plattsburgh.edu/">SUNY Plattsburgh </a>
-              </span>
+              IT Support Specialist @
+              <a
+                className={classes.underline}
+                href="https://www.plattsburgh.edu/"
+              >
+                <span> SUNY Plattsburgh</span>
+              </a>
               <p>Feb 2020 - May 2020</p>
               <li>
                 Provided Tier 1 IT support to non-technical internal users
@@ -179,10 +186,10 @@ export default function ScrollableTabsButtonAuto() {
         <div class={classes.row}>
           <div className={classes.column}>
             <p>
-              Sales Associate @{" "}
-              <span>
-                <a href="https://www.staples.com/">Staples LLC </a>
-              </span>
+              Sales Associate @
+              <a className={classes.underline} href="https://www.staples.com/">
+                <span> Staples LLC</span>
+              </a>
               <p>Sep 2019 - Dec 2019</p>
               <li>
                 Organized racks and shelves to maintain store visual appeal,
@@ -204,10 +211,10 @@ export default function ScrollableTabsButtonAuto() {
         <div class={classes.row}>
           <div className={classes.column}>
             <p>
-              Retail Sales Consultant @{" "}
-              <span>
-                <a href="https://www.speedway.com/">Speedway LLC </a>
-              </span>
+              Retail Sales Consultant @
+              <a className={classes.underline} href="https://www.speedway.com/">
+                <span> Speedway LLC</span>
+              </a>
               <p>Jun 2020 - Present</p>
               <li>
                 Provided accurate information about promotions, customer
@@ -230,12 +237,13 @@ export default function ScrollableTabsButtonAuto() {
         <div class={classes.row}>
           <div className={classes.column}>
             <p>
-              Group Lead/Computer Teacher @{" "}
-              <span>
-                <a href="https://christdisciples.org/">
-                  Christ Disciples Int'l Ministries, Inc.
-                </a>
-              </span>
+              Group Lead/Computer Teacher @
+              <a
+                className={classes.underline}
+                href="https://christdisciples.org/"
+              >
+                <span>Christ Disciples Int'l Ministries, Inc.</span>
+              </a>
               <p>Jul 2019 - Aug 2019</p>
               <li>
                 Reorganized and enhanced employee training closing knowledge
@@ -251,18 +259,19 @@ export default function ScrollableTabsButtonAuto() {
               </li>
             </p>
           </div>
-        </div>{" "}
+        </div>
       </TabPanel>
       <TabPanel className={classes.row} value={value} index={5}>
         <div class={classes.row}>
           <div className={classes.column}>
             <p>
-              Office Assistant @{" "}
-              <span>
-                <a href="https://www.cuimc.columbia.edu/">
-                  Columbia University Medical Center
-                </a>
-              </span>
+              Office Assistant @
+              <a
+                className={classes.underline}
+                href="https://www.cuimc.columbia.edu/"
+              >
+                <span> Columbia University Medical Center </span>
+              </a>
               <p>Jul 2018 - Aug 2018</p>
               <li>
                 Interacted with customers professionally by phone, email, or
@@ -285,12 +294,13 @@ export default function ScrollableTabsButtonAuto() {
         <div class={classes.row}>
           <div className={classes.column}>
             <p>
-              Food Service Worker @{" "}
-              <span>
-                <a href="https://www.compass-usa.com/">
-                  Compass Group North America{" "}
-                </a>
-              </span>
+              Food Service Worker @
+              <a
+                className={classes.underline}
+                href="https://www.compass-usa.com/"
+              >
+                <span> Compass Group North America</span>
+              </a>
               <p>Nov 2016 - May 2017</p>
               <li>
                 Replenished condiments, beverages, and supplies while
@@ -309,10 +319,13 @@ export default function ScrollableTabsButtonAuto() {
         <div class={classes.row}>
           <div className={classes.column}>
             <p>
-              Teacher Aide @{" "}
-              <span>
-                <a href="">Mercy Center</a>
-              </span>
+              Teacher Aide @
+              <a
+                className={classes.underline}
+                href="https://www.mercycenterbronx.org/"
+              >
+                <span> Mercy Center</span>
+              </a>
               <p>Jul 2016 - Aug 2018</p>
               <li>
                 Assisted children with daily homework tasks by uncovering and
@@ -328,7 +341,7 @@ export default function ScrollableTabsButtonAuto() {
               </li>
             </p>
           </div>
-        </div>{" "}
+        </div>
       </TabPanel>
     </div>
   );
