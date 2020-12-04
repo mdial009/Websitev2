@@ -18,6 +18,21 @@
 .Spacediv {
   margin-left: 20px;
 }
+
+.Features {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 24px;
+  justify-content: center;
+  align-items: center;
+  font-size: 13px;
+}
+
+
+
+
+
 /*         <MCCard />
         <div className="Spacediv"></div>
         <ITSS />

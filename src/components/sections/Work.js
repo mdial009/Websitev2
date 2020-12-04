@@ -18,7 +18,7 @@ export default function Work() {
         <span>03. Some Things I’ve Built</span>
       </div>
       <div className="Features">
-        <span>Some Things I’ve Built</span>
+        <span>Featured Projects</span>
       </div>
       <div className="Works">
         <PortfolioWebsite />
@@ -26,8 +26,14 @@ export default function Work() {
         <GithubUsers />
         <div className="Spacediv"></div>
       </div>
-      <div className="Work">
-        <span>03. Some Things I’ve Built</span>
+      <div className="Features">
+        <span>Other Noteworthy Projects</span>
+      </div>
+      <div className="Works">
+        <PortfolioWebsite />
+        <div className="Spacediv"></div>
+        <GithubUsers />
+        <div className="Spacediv"></div>
       </div>
     </>
   );
