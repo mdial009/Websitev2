@@ -54,7 +54,7 @@ export default function MCCard() {
     <Card className={classes.root}>
       <CardMedia
         className={classes.media}
-        image={MercyCenter}
+        image={GithubUsers}
         title="Mercy Center"
       />
       <CardContent>

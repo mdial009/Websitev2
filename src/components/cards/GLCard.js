@@ -53,7 +53,7 @@ export default function GLCard() {
     <Card className={classes.root}>
       <CardMedia
         className={classes.media}
-        image={GL}
+        image={GithubUsers}
         title="Group Lead/Computer Teacher"
       />
       <CardContent>
@@ -63,7 +63,7 @@ export default function GLCard() {
           component="p"
           className={classes.Typography}
         >
-          Christ Disciples Int'l Ministries, Inc.{" "}
+          Christ Disciples Int'l Ministries, Inc.
           <span className={classes.span}></span>
           <span className={classes.span}></span>
           Group Lead/Computer Teacher <span className={classes.span}></span>

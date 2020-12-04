@@ -32,7 +32,7 @@ export default function PortfolioCard() {
       transform: "rotate(180deg)",
     },
     span: {
-      marginLeft: "900px",
+      marginLeft: "400px",
     },
     spans: {
       marginLeft: "9px",
@@ -57,7 +57,11 @@ export default function PortfolioCard() {
 
   return (
     <Card className={classes.root}>
-      <CardMedia className={classes.media} image={PortfolioWebsite} title="PortfolioWebsite" />
+      <CardMedia
+        className={classes.media}
+        image={PortfolioWebsite}
+        title="PortfolioWebsite"
+      />
       <CardContent>
         <Typography
           variant="inherit"
@@ -66,12 +70,30 @@ export default function PortfolioCard() {
           className={classes.Typography}
         >
           Portfolio Website v1 <span className={classes.span}></span>
-          <span className={classes.span}></span>
-          SCSS 28.2% <span className={classes.span}></span> Less 25.6%{" "}
-          <span className={classes.span}></span>CSS 21.8%{" "}
-          <span className={classes.span}></span>JavaScript 18.4%{" "}
-          <span className={classes.span}></span>HTML 6.0%{" "}
-          <span className={classes.span}></span>
+        </Typography>
+        <Typography
+          variant="inherit"
+          color="inherit"
+          component="p"
+          className={classes.Typography}
+        >
+          CSS 21.8%
+        </Typography>
+        <Typography
+          variant="inherit"
+          color="inherit"
+          component="p"
+          className={classes.Typography}
+        >
+          JavaScript 18.4%
+        </Typography>
+        <Typography
+          variant="inherit"
+          color="inherit"
+          component="p"
+          className={classes.Typography}
+        >
+          HTML 6.0%{" "}
         </Typography>
         <Typography
           variant="inherit"

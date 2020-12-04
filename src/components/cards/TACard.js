@@ -53,7 +53,7 @@ export default function ITSSCard() {
     <Card className={classes.root}>
       <CardMedia
         className={classes.media}
-        image={TA}
+        image={GithubUsers}
         title="Technical Assistant"
       />
       <CardContent>

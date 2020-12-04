@@ -53,7 +53,7 @@ export default function SpeedwayCard() {
     <Card className={classes.root}>
       <CardMedia
         className={classes.media}
-        image={Speedway}
+        image={GithubUsers}
         title="Retail Sales Consultant"
       />
       <CardContent>
