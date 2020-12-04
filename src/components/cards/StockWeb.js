@@ -14,7 +14,7 @@ import StockWeb from "../../images/StockWebApplication1.png";
 export default function StockWebCard() {
   const useStyles = makeStyles((theme) => ({
     root: {
-      maxWidth: 300,
+      maxWidth: 400,
       backgroundColor: "#0a192f",
     },
     media: {
@@ -82,6 +82,7 @@ export default function StockWebCard() {
           component="p"
           align="center"
         >
+          <span className={classes.span}></span>
           <div className={classes.Typographys}>
             <a href="https://mdial009.github.io/">
               <i class=""></i>

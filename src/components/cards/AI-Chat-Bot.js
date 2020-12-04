@@ -9,16 +9,16 @@ import Collapse from "@material-ui/core/Collapse";
 import IconButton from "@material-ui/core/IconButton";
 import Typography from "@material-ui/core/Typography";
 import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
-import GithubUsers from "../../images/GithubUserProject.png";
+import AI from "../../images/AIChatBot.jpg";
 
-export default function StaplesCard() {
+export default function StockWebCard() {
   const useStyles = makeStyles((theme) => ({
     root: {
-      maxWidth: 346,
+      maxWidth: 400,
       backgroundColor: "#0a192f",
     },
     media: {
-      height: 30,
+      height: 300,
       paddingTop: "56.25%", // 16:9
     },
     expand: {
@@ -33,6 +33,9 @@ export default function StaplesCard() {
     },
     span: {
       marginLeft: "900px",
+    },
+    spans: {
+      marginLeft: "9px",
     },
     Typography: {
       color: "#0096c7",
@@ -51,11 +54,7 @@ export default function StaplesCard() {
 
   return (
     <Card className={classes.root}>
-      <CardMedia
-        className={classes.media}
-        image={GithubUsers}
-        title="Sales Associate"
-      />
+      <CardMedia className={classes.media} image={AI} title="AI-Chat-Bot" />
       <CardContent>
         <Typography
           variant="inherit"
@@ -63,10 +62,34 @@ export default function StaplesCard() {
           component="p"
           className={classes.Typography}
         >
-          Staples LLC <span className={classes.span}></span>
-          Sales Associate <span className={classes.span}></span>Plattsburgh, New
-          York, United States <span className={classes.span}></span>Nov 2017 -
-          May 2020
+          AI-Chat-Bot <span className={classes.span}></span>
+        </Typography>
+        <Typography
+          variant="inherit"
+          color="inherit"
+          component="p"
+          className={classes.Typography}
+        >
+          Python
+        </Typography>
+        <Typography
+          variant="inherit"
+          color="inherit"
+          component="p"
+          align="center"
+        >
+          <span className={classes.span}></span>
+          <div className={classes.Typographys}>
+            <a href="https://mdial009.github.io/">
+              <i class=""></i>
+              <span>Website</span>
+            </a>
+            <span className={classes.spans}></span>
+            <a href="https://mdial009.github.io/">
+              <i class="https://github.com/mdial009/mdial009.github.io"></i>
+              <span>Github</span>
+            </a>
+          </div>
         </Typography>
       </CardContent>
       <CardActions disableSpacing>
@@ -84,16 +107,10 @@ export default function StaplesCard() {
       <Collapse in={expanded} timeout="auto" unmountOnExit>
         <CardContent>
           <Typography className={classes.paragraph} paragraph variant="inherit">
-            • Organized racks and shelves to maintain store visual appeal,
-            engage customers and promote specific merchandise.
-          </Typography>
-          <Typography className={classes.paragraph} paragraph variant="inherit">
-            • Worked alongside retail representatives to boost sales by
-            enhancing product presentations and advertising collateral.
-          </Typography>
-          <Typography className={classes.paragraph} paragraph variant="inherit">
-            • Trained and developed Sales Associates in company processes,
-            product knowledge, customer service and selling techniques.
+            This is a "Smart" Chat Bot Program that allows you to enter a url of
+            a article and lets you ask a question that it then takes and
+            quarries it on the website and brings back anything it can find on
+            that specify thing.
           </Typography>
         </CardContent>
       </Collapse>

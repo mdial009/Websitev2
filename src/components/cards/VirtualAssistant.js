@@ -14,7 +14,7 @@ import VirtualAssistant from "../../images/VirtualAssistant.jpg";
 export default function VirtualAssistantCard() {
   const useStyles = makeStyles((theme) => ({
     root: {
-      maxWidth: 300,
+      maxWidth: 400,
       backgroundColor: "#0a192f",
     },
     media: {
@@ -82,6 +82,7 @@ export default function VirtualAssistantCard() {
           component="p"
           align="center"
         >
+          <span className={classes.span}></span>
           <div className={classes.Typographys}>
             <a href="https://mdial009.github.io/">
               <i class=""></i>

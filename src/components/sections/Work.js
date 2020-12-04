@@ -5,8 +5,8 @@ import PortfolioWebsite from "../cards/Portfolio.js";
 import GithubUsers from "../../components/cards/GithubUsers.js";
 import StockWeb from "../../components/cards/StockWeb.js";
 import VirtualAssistant from "../../components/cards/VirtualAssistant.js";
-import Speedway from "../../components/cards/SpeedwayCard.js";
-import TA from "../../components/cards/TACard.js";
+import AI from "../../components/cards/AI-Chat-Bot.js";
+import ICM from "../../components/cards/ICM.js";
 import GLCard from "../cards/StockWeb.js";
 import OA from "../../components/cards/OACard.js";
 import FSW from "../cards/GithubUsers.js";
@@ -33,6 +33,10 @@ export default function Work() {
         <StockWeb />
         <div className="Spacediv"></div>
         <VirtualAssistant />
+        <div className="Spacediv"></div>
+         <AI />
+        <div className="Spacediv"></div>
+         <ICM />
         <div className="Spacediv"></div>
       </div>
     </>

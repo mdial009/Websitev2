@@ -9,16 +9,16 @@ import Collapse from "@material-ui/core/Collapse";
 import IconButton from "@material-ui/core/IconButton";
 import Typography from "@material-ui/core/Typography";
 import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
-import GithubUsers from "../../images/GithubUserProject.png";
+import ICM from "../../images/ICM.jpg";
 
-export default function ITSSCard() {
+export default function StockWebCard() {
   const useStyles = makeStyles((theme) => ({
     root: {
-      maxWidth: 346,
+      maxWidth: 400,
       backgroundColor: "#0a192f",
     },
     media: {
-      height: 30,
+      height: 300,
       paddingTop: "56.25%", // 16:9
     },
     expand: {
@@ -33,6 +33,9 @@ export default function ITSSCard() {
     },
     span: {
       marginLeft: "900px",
+    },
+    spans: {
+      marginLeft: "9px",
     },
     Typography: {
       color: "#0096c7",
@@ -53,8 +56,8 @@ export default function ITSSCard() {
     <Card className={classes.root}>
       <CardMedia
         className={classes.media}
-        image={GithubUsers}
-        title="Technical Assistant"
+        image={ICM}
+        title="ICM = Image Classification Machine"
       />
       <CardContent>
         <Typography
@@ -63,10 +66,34 @@ export default function ITSSCard() {
           component="p"
           className={classes.Typography}
         >
-          SUNY Plattsburgh <span className={classes.span}></span>
-          Technical Assistant <span className={classes.span}></span>Plattsburgh,
-          New York, United States <span className={classes.span}></span>Jan 2019
-          - May 2019
+          ICM = Image Classification Machine <span className={classes.span}></span>
+        </Typography>
+        <Typography
+          variant="inherit"
+          color="inherit"
+          component="p"
+          className={classes.Typography}
+        >
+          Python
+        </Typography>
+        <Typography
+          variant="inherit"
+          color="inherit"
+          component="p"
+          align="center"
+        >
+          <span className={classes.span}></span>
+          <div className={classes.Typographys}>
+            <a href="https://mdial009.github.io/">
+              <i class=""></i>
+              <span>Website</span>
+            </a>
+            <span className={classes.spans}></span>
+            <a href="https://mdial009.github.io/">
+              <i class="https://github.com/mdial009/mdial009.github.io"></i>
+              <span>Github</span>
+            </a>
+          </div>
         </Typography>
       </CardContent>
       <CardActions disableSpacing>
@@ -84,17 +111,8 @@ export default function ITSSCard() {
       <Collapse in={expanded} timeout="auto" unmountOnExit>
         <CardContent>
           <Typography className={classes.paragraph} paragraph variant="inherit">
-            • Served as the primary point of contact for incoming media calls,
-            including requests for meetings and interviews with company
-            executives and experts.
-          </Typography>
-          <Typography className={classes.paragraph} paragraph variant="inherit">
-            • Assisted patrons with library's computers and provided information
-            on logging onto the Internet.
-          </Typography>
-          <Typography className={classes.paragraph} paragraph variant="inherit">
-            • Closely monitored front desk visitors to maintain a secure and
-            clean environment.
+            Used the TensorFlow library to train the AI and based on data and
+            take that data to classify an image.
           </Typography>
         </CardContent>
       </Collapse>
