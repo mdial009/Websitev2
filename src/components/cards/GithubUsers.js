@@ -77,7 +77,7 @@ export default function GithubCard() {
           component="p"
           className={classes.Typography}
         >
-          JavaScript 96.7%
+          CSS
         </Typography>
         <Typography
           variant="inherit"
@@ -85,7 +85,7 @@ export default function GithubCard() {
           component="p"
           className={classes.Typography}
         >
-          CSS 2.2%
+          JavaScript
         </Typography>
         <Typography
           variant="inherit"
@@ -93,7 +93,7 @@ export default function GithubCard() {
           component="p"
           className={classes.Typography}
         >
-          HTML 1.1%
+          HTML
         </Typography>
         <Typography
           variant="inherit"

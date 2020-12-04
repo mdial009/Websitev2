@@ -77,7 +77,7 @@ export default function PortfolioCard() {
           component="p"
           className={classes.Typography}
         >
-          CSS 21.8%
+          CSS
         </Typography>
         <Typography
           variant="inherit"
@@ -85,7 +85,7 @@ export default function PortfolioCard() {
           component="p"
           className={classes.Typography}
         >
-          JavaScript 18.4%
+          JavaScript
         </Typography>
         <Typography
           variant="inherit"
@@ -93,7 +93,7 @@ export default function PortfolioCard() {
           component="p"
           className={classes.Typography}
         >
-          HTML 6.0%{" "}
+          HTML
         </Typography>
         <Typography
           variant="inherit"
