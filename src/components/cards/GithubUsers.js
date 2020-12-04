@@ -57,7 +57,11 @@ export default function GithubCard() {
 
   return (
     <Card className={classes.root}>
-      <CardMedia className={classes.media} image={GithubUsers} title="GithubUser" />
+      <CardMedia
+        className={classes.media}
+        image={GithubUsers}
+        title="GithubUser"
+      />
       <CardContent>
         <Typography
           variant="inherit"
@@ -125,8 +129,9 @@ export default function GithubCard() {
       <Collapse in={expanded} timeout="auto" unmountOnExit>
         <CardContent>
           <Typography paragraph className={classes.paragraph} variant="inherit">
-            This is a my portofilio website displaying some of my skills in
-            JS,HTML and CSS
+            A nicer look at your GitHub profile and repository stats with data
+            visualizations of your top languages and stars. Sort through your
+            top repos by number of stars, forks, and size.
           </Typography>
         </CardContent>
       </Collapse>
