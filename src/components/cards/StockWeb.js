@@ -9,16 +9,16 @@ import Collapse from "@material-ui/core/Collapse";
 import IconButton from "@material-ui/core/IconButton";
 import Typography from "@material-ui/core/Typography";
 import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
-import GithubUsers from "../../images/GithubUserProject.png";
+import StockWeb from "../../images/StockWebApplication1.png";
 
-export default function ITSSCard() {
+export default function StockWebCard() {
   const useStyles = makeStyles((theme) => ({
     root: {
-      maxWidth: 346,
+      maxWidth: 300,
       backgroundColor: "#0a192f",
     },
     media: {
-      height: 30,
+      height: 300,
       paddingTop: "56.25%", // 16:9
     },
     expand: {
@@ -33,6 +33,9 @@ export default function ITSSCard() {
     },
     span: {
       marginLeft: "900px",
+    },
+    spans: {
+      marginLeft: "9px",
     },
     Typography: {
       color: "#0096c7",
@@ -53,8 +56,8 @@ export default function ITSSCard() {
     <Card className={classes.root}>
       <CardMedia
         className={classes.media}
-        image={GithubUsers}
-        title="Information Technology Support Specialist"
+        image={StockWeb}
+        title="Stock-Web-Application"
       />
       <CardContent>
         <Typography
@@ -63,10 +66,33 @@ export default function ITSSCard() {
           component="p"
           className={classes.Typography}
         >
-          SUNY Plattsburgh <span className={classes.span}></span>
-          IT Support Specialist <span className={classes.span}></span>{" "}
-          Plattsburgh, New York, United States{" "}
-          <span className={classes.span}></span>Feb 2020 - May 2020
+          Stock-Web-Application <span className={classes.span}></span>
+        </Typography>
+        <Typography
+          variant="inherit"
+          color="inherit"
+          component="p"
+          className={classes.Typography}
+        >
+          Python
+        </Typography>
+        <Typography
+          variant="inherit"
+          color="inherit"
+          component="p"
+          align="center"
+        >
+          <div className={classes.Typographys}>
+            <a href="https://mdial009.github.io/">
+              <i class=""></i>
+              <span>Website</span>
+            </a>
+            <span className={classes.spans}></span>
+            <a href="https://mdial009.github.io/">
+              <i class="https://github.com/mdial009/mdial009.github.io"></i>
+              <span>Github</span>
+            </a>
+          </div>
         </Typography>
       </CardContent>
       <CardActions disableSpacing>
@@ -84,16 +110,8 @@ export default function ITSSCard() {
       <Collapse in={expanded} timeout="auto" unmountOnExit>
         <CardContent>
           <Typography className={classes.paragraph} paragraph variant="inherit">
-            • Provided Tier 1 IT support to non-technical internal users through
-            desk side support services.
-          </Typography>
-          <Typography className={classes.paragraph} paragraph variant="inherit">
-            • Conducted in-depth product and issue resolution research to
-            address customer concerns.
-          </Typography>
-          <Typography className={classes.paragraph} paragraph variant="inherit">
-            • Maintained historical records by documenting system changes and
-            revisions.
+            This is a stock market dashboard to show some charts and data on
+            some stock
           </Typography>
         </CardContent>
       </Collapse>

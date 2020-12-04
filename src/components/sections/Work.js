@@ -3,11 +3,11 @@ import "../../App.css";
 import "./Work.css";
 import PortfolioWebsite from "../cards/Portfolio.js";
 import GithubUsers from "../../components/cards/GithubUsers.js";
-import ITSS from "../../components/cards/ITSS.js";
-import Staples from "../../components/cards/StaplesCard.js";
+import StockWeb from "../../components/cards/StockWeb.js";
+import VirtualAssistant from "../../components/cards/VirtualAssistant.js";
 import Speedway from "../../components/cards/SpeedwayCard.js";
 import TA from "../../components/cards/TACard.js";
-import GLCard from "../../components/cards/GLCard.js";
+import GLCard from "../cards/StockWeb.js";
 import OA from "../../components/cards/OACard.js";
 import FSW from "../cards/GithubUsers.js";
 
@@ -30,9 +30,9 @@ export default function Work() {
         <span>Other Noteworthy Projects</span>
       </div>
       <div className="Works">
-        <PortfolioWebsite />
+        <StockWeb />
         <div className="Spacediv"></div>
-        <GithubUsers />
+        <VirtualAssistant />
         <div className="Spacediv"></div>
       </div>
     </>

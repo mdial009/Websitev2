@@ -9,16 +9,16 @@ import Collapse from "@material-ui/core/Collapse";
 import IconButton from "@material-ui/core/IconButton";
 import Typography from "@material-ui/core/Typography";
 import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
-import GithubUsers from "../../images/GithubUserProject.png";
+import VirtualAssistant from "../../images/VirtualAssistant.jpg";
 
-export default function GLCard() {
+export default function VirtualAssistantCard() {
   const useStyles = makeStyles((theme) => ({
     root: {
-      maxWidth: 346,
+      maxWidth: 300,
       backgroundColor: "#0a192f",
     },
     media: {
-      height: 30,
+      height: 300,
       paddingTop: "56.25%", // 16:9
     },
     expand: {
@@ -33,6 +33,9 @@ export default function GLCard() {
     },
     span: {
       marginLeft: "900px",
+    },
+      spans: {
+      marginLeft: "9px",
     },
     Typography: {
       color: "#0096c7",
@@ -53,8 +56,8 @@ export default function GLCard() {
     <Card className={classes.root}>
       <CardMedia
         className={classes.media}
-        image={GithubUsers}
-        title="Group Lead/Computer Teacher"
+        image={VirtualAssistant}
+        title="Virtual Assistant"
       />
       <CardContent>
         <Typography
@@ -63,12 +66,33 @@ export default function GLCard() {
           component="p"
           className={classes.Typography}
         >
-          Christ Disciples Int'l Ministries, Inc.
-          <span className={classes.span}></span>
-          <span className={classes.span}></span>
-          Group Lead/Computer Teacher <span className={classes.span}></span>
-          Bronx, New York, United States{" "}
-          <span className={classes.span}></span>Jul 2019 - Aug 2019
+          Virtual Assistant <span className={classes.span}></span>
+        </Typography>
+        <Typography
+          variant="inherit"
+          color="inherit"
+          component="p"
+          className={classes.Typography}
+        >
+          Python
+        </Typography>
+        <Typography
+          variant="inherit"
+          color="inherit"
+          component="p"
+          align="center"
+        >
+          <div className={classes.Typographys}>
+            <a href="https://mdial009.github.io/">
+              <i class=""></i>
+              <span>Website</span>
+            </a>
+            <span className={classes.spans}></span>
+            <a href="https://mdial009.github.io/">
+              <i class="https://github.com/mdial009/mdial009.github.io"></i>
+              <span>Github</span>
+            </a>
+          </div>
         </Typography>
       </CardContent>
       <CardActions disableSpacing>
@@ -86,16 +110,9 @@ export default function GLCard() {
       <Collapse in={expanded} timeout="auto" unmountOnExit>
         <CardContent>
           <Typography className={classes.paragraph} paragraph variant="inherit">
-            • Reorganized and enhanced employee training closing knowledge gaps
-            and boost group performance.
-          </Typography>
-          <Typography className={classes.paragraph} paragraph variant="inherit">
-            • Developed a quality-driven culture to boost team performance and
-            efficiency while maintaining a highly satisfied workforce.
-          </Typography>
-          <Typography className={classes.paragraph} paragraph variant="inherit">
-            • Planned and implemented a curriculum to teach up-to-date
-            technology to 10 students.
+            This is a Virtual Assistant program that gets the date, current
+            time, Respond back with a random greeting, and return information on
+            a person.
           </Typography>
         </CardContent>
       </Collapse>
