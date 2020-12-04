@@ -9,16 +9,16 @@ import Collapse from "@material-ui/core/Collapse";
 import IconButton from "@material-ui/core/IconButton";
 import Typography from "@material-ui/core/Typography";
 import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
-import GL from "../../images/CompassGroup.jpg";
+import PortfolioWebsite from "../../images/PortfolioWebsite.png";
 
-export default function GLCard() {
+export default function PortfolioCard() {
   const useStyles = makeStyles((theme) => ({
     root: {
-      maxWidth: 346,
+      maxWidth: 546,
       backgroundColor: "#0a192f",
     },
     media: {
-      height: 30,
+      height: 600,
       paddingTop: "56.25%", // 16:9
     },
     expand: {
@@ -34,11 +34,17 @@ export default function GLCard() {
     span: {
       marginLeft: "900px",
     },
+    spans: {
+      marginLeft: "9px",
+    },
     Typography: {
       color: "#0096c7",
     },
     paragraph: {
       color: "#0096c7",
+    },
+    Typographys: {
+      color: "#0066c7",
     },
   }));
 
@@ -51,11 +57,7 @@ export default function GLCard() {
 
   return (
     <Card className={classes.root}>
-      <CardMedia
-        className={classes.media}
-        image={GL}
-        title="Food Service Worker"
-      />
+      <CardMedia className={classes.media} image={PortfolioWebsite} title="PortfolioWebsite" />
       <CardContent>
         <Typography
           variant="inherit"
@@ -63,12 +65,31 @@ export default function GLCard() {
           component="p"
           className={classes.Typography}
         >
-          Compass Group North America <span className={classes.span}></span>
+          Portfolio Website v1 <span className={classes.span}></span>
           <span className={classes.span}></span>
-          Food Service Worker <span className={classes.span}></span>
-          Plattsburgh, New York, United States{" "}
+          SCSS 28.2% <span className={classes.span}></span> Less 25.6%{" "}
+          <span className={classes.span}></span>CSS 21.8%{" "}
+          <span className={classes.span}></span>JavaScript 18.4%{" "}
+          <span className={classes.span}></span>HTML 6.0%{" "}
           <span className={classes.span}></span>
-          Nov 2016 - May 2017
+        </Typography>
+        <Typography
+          variant="inherit"
+          color="inherit"
+          component="p"
+          align="center"
+        >
+          <div className={classes.Typographys}>
+            <a href="https://mdial009.github.io/">
+              <i class=""></i>
+              <span>Website</span>
+            </a>
+            <span className={classes.spans}></span>
+            <a href="https://mdial009.github.io/">
+              <i class="https://github.com/mdial009/mdial009.github.io"></i>
+              <span>Github</span>
+            </a>
+          </div>
         </Typography>
       </CardContent>
       <CardActions disableSpacing>
@@ -85,16 +106,9 @@ export default function GLCard() {
       </CardActions>
       <Collapse in={expanded} timeout="auto" unmountOnExit>
         <CardContent>
-          <Typography className={classes.paragraph} paragraph variant="inherit">
-            • Replenished condiments, beverages, and supplies while maintaining
-            the cleanliness of service areas.
-          </Typography>
-          <Typography className={classes.paragraph} paragraph variant="inherit">
-            • Cooked batches of food according to standard recipes.
-          </Typography>
-          <Typography className={classes.paragraph} paragraph variant="inherit">
-            • Inspected equipment such as refrigerators and warming lamps every
-            hour to check compliance with safe operating levels.
+          <Typography paragraph className={classes.paragraph} variant="inherit">
+            This is a my portofilio website displaying some of my skills in
+            JS,HTML and CSS
           </Typography>
         </CardContent>
       </Collapse>

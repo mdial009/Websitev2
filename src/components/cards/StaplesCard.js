@@ -9,7 +9,7 @@ import Collapse from "@material-ui/core/Collapse";
 import IconButton from "@material-ui/core/IconButton";
 import Typography from "@material-ui/core/Typography";
 import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
-import Staples from "../../images/Staples.png";
+import GithubUsers from "../../images/GithubUserProject.png";
 
 export default function StaplesCard() {
   const useStyles = makeStyles((theme) => ({
@@ -53,7 +53,7 @@ export default function StaplesCard() {
     <Card className={classes.root}>
       <CardMedia
         className={classes.media}
-        image={Staples}
+        image={GithubUsers}
         title="Sales Associate"
       />
       <CardContent>

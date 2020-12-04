@@ -9,7 +9,7 @@ import Collapse from "@material-ui/core/Collapse";
 import IconButton from "@material-ui/core/IconButton";
 import Typography from "@material-ui/core/Typography";
 import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
-import GL from "../../images/CDIM .png";
+import GithubUsers from "../../images/GithubUserProject.png";
 
 export default function GLCard() {
   const useStyles = makeStyles((theme) => ({

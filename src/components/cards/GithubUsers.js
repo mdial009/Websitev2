@@ -2,25 +2,23 @@ import * as React from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import clsx from "clsx";
 import Card from "@material-ui/core/Card";
-import CardHeader from "@material-ui/core/CardHeader";
 import CardMedia from "@material-ui/core/CardMedia";
 import CardContent from "@material-ui/core/CardContent";
 import CardActions from "@material-ui/core/CardActions";
 import Collapse from "@material-ui/core/Collapse";
-import Avatar from "@material-ui/core/Avatar";
 import IconButton from "@material-ui/core/IconButton";
 import Typography from "@material-ui/core/Typography";
 import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
-import IBM from "../../images/PortfolioWebsite.png";
+import GithubUsers from "../../images/GithubUserProject.png";
 
-export default function IBMCard() {
+export default function GithubCard() {
   const useStyles = makeStyles((theme) => ({
     root: {
       maxWidth: 546,
       backgroundColor: "#0a192f",
     },
     media: {
-      height: 30,
+      height: 600,
       paddingTop: "56.25%", // 16:9
     },
     expand: {
@@ -34,7 +32,7 @@ export default function IBMCard() {
       transform: "rotate(180deg)",
     },
     span: {
-      marginLeft: "900px",
+      marginLeft: "400px",
     },
     spans: {
       marginLeft: "9px",
@@ -59,7 +57,7 @@ export default function IBMCard() {
 
   return (
     <Card className={classes.root}>
-      <CardMedia className={classes.media} image={IBM} title="IBM" />
+      <CardMedia className={classes.media} image={GithubUsers} title="GithubUser" />
       <CardContent>
         <Typography
           variant="inherit"
@@ -67,13 +65,31 @@ export default function IBMCard() {
           component="p"
           className={classes.Typography}
         >
-          Portfolio Website v1 <span className={classes.span}></span>
-          <span className={classes.span}></span>
-          SCSS 28.2% <span className={classes.span}></span> Less 25.6%{" "}
-          <span className={classes.span}></span>CSS 21.8%{" "}
-          <span className={classes.span}></span>JavaScript 18.4%{" "}
-          <span className={classes.span}></span>HTML 6.0%{" "}
-          <span className={classes.span}></span>
+          Github Users <span className={classes.span}></span>
+        </Typography>
+        <Typography
+          variant="inherit"
+          color="inherit"
+          component="p"
+          className={classes.Typography}
+        >
+          JavaScript 96.7%
+        </Typography>
+        <Typography
+          variant="inherit"
+          color="inherit"
+          component="p"
+          className={classes.Typography}
+        >
+          CSS 2.2%
+        </Typography>
+        <Typography
+          variant="inherit"
+          color="inherit"
+          component="p"
+          className={classes.Typography}
+        >
+          HTML 1.1%
         </Typography>
         <Typography
           variant="inherit"
