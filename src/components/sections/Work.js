@@ -7,9 +7,6 @@ import StockWeb from "../../components/cards/StockWeb.js";
 import VirtualAssistant from "../../components/cards/VirtualAssistant.js";
 import AI from "../../components/cards/AI-Chat-Bot.js";
 import ICM from "../../components/cards/ICM.js";
-import GLCard from "../cards/StockWeb.js";
-import OA from "../../components/cards/OACard.js";
-import FSW from "../cards/GithubUsers.js";
 
 export default function Work() {
   return (
@@ -29,14 +26,17 @@ export default function Work() {
       <div className="Features">
         <span>Other Noteworthy Projects</span>
       </div>
+      <div className="Features">
+       <a href="www.github.com"><span>View The Archive</span></a>
+      </div>
       <div className="Works">
         <StockWeb />
         <div className="Spacediv"></div>
         <VirtualAssistant />
         <div className="Spacediv"></div>
-         <AI />
+        <AI />
         <div className="Spacediv"></div>
-         <ICM />
+        <ICM />
         <div className="Spacediv"></div>
       </div>
     </>
