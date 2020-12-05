@@ -27,7 +27,9 @@ export default function Work() {
         <span>Other Noteworthy Projects</span>
       </div>
       <div className="Features">
-       <a href="www.github.com"><span>View The Archive</span></a>
+        <a href="www.github.com">
+          <span>View The Archive</span>
+        </a>
       </div>
       <div className="Works">
         <StockWeb />

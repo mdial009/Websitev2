@@ -66,7 +66,8 @@ export default function StockWebCard() {
           component="p"
           className={classes.Typography}
         >
-          ICM = Image Classification Machine <span className={classes.span}></span>
+          ICM = Image Classification Machine{" "}
+          <span className={classes.span}></span>
         </Typography>
         <Typography
           variant="inherit"
@@ -85,13 +86,11 @@ export default function StockWebCard() {
           <span className={classes.span}></span>
           <div className={classes.Typographys}>
             <a href="https://mdial009.github.io/">
-              <i class=""></i>
-              <span>Website</span>
+              <i class="fas fa-external-link-square-alt"></i>
             </a>
             <span className={classes.spans}></span>
-            <a href="https://mdial009.github.io/">
-              <i class="https://github.com/mdial009/mdial009.github.io"></i>
-              <span>Github</span>
+            <a href="https://github.com/mdial009/mdial009.github.io">
+              <i class="fab fa-github"></i>
             </a>
           </div>
         </Typography>
