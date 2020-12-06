@@ -67,6 +67,9 @@ const useStyles = makeStyles((theme) => ({
   underline: {
     textDecoration: "none",
   },
+  arrows: {
+    listStyle: "none",
+  },
 }));
 
 export default function ScrollableTabsButtonAuto() {
@@ -110,20 +113,20 @@ export default function ScrollableTabsButtonAuto() {
                 <span> IBM</span>
               </a>
               <p>Sep 2019 - Dec 2019</p>
-              <li>
-                Presented security solutions to past breaches in an Agile manner
-                in a team that assisted in the mitigation of the effect of data
-                loss or privacy invasion.
+              <li className={classes.arrows}>
+                ‣ Presented security solutions to past breaches in an Agile
+                manner in a team that assisted in the mitigation of the effect
+                of data loss or privacy invasion.
               </li>
-              <li>
-                Researched past data breaches and present them to professional
+              <li className={classes.arrows}>
+                ‣ Researched past data breaches and present them to professional
                 security mentors with a solution with IBM security products and
                 services.
               </li>
-              <li>
-                Learned how IBM’s integrated tools such as Qradar, SOAR, and IBM
-                BigFix could assist corporations presently and in the future to
-                secure customer data.
+              <li className={classes.arrows}>
+                ‣ Learned how IBM’s integrated tools such as Qradar, SOAR, and
+                IBM BigFix could assist corporations presently and in the future
+                to secure customer data.
               </li>
             </p>
           </div>
@@ -141,17 +144,17 @@ export default function ScrollableTabsButtonAuto() {
                 <span> SUNY Plattsburgh</span>
               </a>
               <p>Jan 2019 - May 2019</p>
-              <li>
-                Served as the primary point of contact for incoming media calls,
-                including requests for meetings and interviews with company
-                executives and experts.
+              <li className={classes.arrows}>
+                ‣ Served as the primary point of contact for incoming media
+                calls, including requests for meetings and interviews with
+                company executives and experts.
               </li>
-              <li>
-                Assisted patrons with library's computers and provided
+              <li className={classes.arrows}>
+                ‣ Assisted patrons with library's computers and provided
                 information on logging onto the Internet.
               </li>
-              <li>
-                Closely monitored front desk visitors to maintain a secure and
+              <li className={classes.arrows}>
+                ‣ Closely monitored front desk visitors to maintain a secure and
                 clean environment.
               </li>
             </p>
@@ -166,17 +169,17 @@ export default function ScrollableTabsButtonAuto() {
                 <span> SUNY Plattsburgh</span>
               </a>
               <p>Feb 2020 - May 2020</p>
-              <li>
-                Provided Tier 1 IT support to non-technical internal users
+              <li className={classes.arrows}>
+                ‣ Provided Tier 1 IT support to non-technical internal users
                 through desk side support services.
               </li>
-              <li>
-                Conducted in-depth product and issue resolution research to
+              <li className={classes.arrows}>
+                ‣ Conducted in-depth product and issue resolution research to
                 address customer concerns.
               </li>
-              <li>
-                Maintained historical records by documenting system changes and
-                revisions.
+              <li className={classes.arrows}>
+                ‣ Maintained historical records by documenting system changes
+                and revisions.
               </li>
             </div>
           </div>
@@ -191,21 +194,21 @@ export default function ScrollableTabsButtonAuto() {
                 <span> Staples LLC</span>
               </a>
               <p>Sep 2019 - Dec 2019</p>
-              <li>
-                Organized racks and shelves to maintain store visual appeal,
+              <li className={classes.arrows}>
+                ‣ Organized racks and shelves to maintain store visual appeal,
                 engage customers and promote specific merchandise.
               </li>
-              <li>
-                Worked alongside retail representatives to boost sales by
+              <li className={classes.arrows}>
+                ‣ Worked alongside retail representatives to boost sales by
                 enhancing product presentations and advertising collateral.
               </li>
-              <li>
-                Trained and developed Sales Associates in company processes,
+              <li className={classes.arrows}>
+                ‣ Trained and developed Sales Associates in company processes,
                 product knowledge, customer service and selling techniques.
               </li>
             </p>
           </div>
-        </div>{" "}
+        </div>
       </TabPanel>
       <TabPanel className={classes.row} value={value} index={3}>
         <div class={classes.row}>
@@ -216,16 +219,16 @@ export default function ScrollableTabsButtonAuto() {
                 <span> Speedway LLC</span>
               </a>
               <p>Jun 2020 - Present</p>
-              <li>
-                Provided accurate information about promotions, customer
+              <li className={classes.arrows}>
+                ‣ Provided accurate information about promotions, customer
                 programs, and products, helping drive high customer retention.
               </li>
-              <li>
-                Approached each problem with a fresh mind and analytical
+              <li className={classes.arrows}>
+                ‣ Approached each problem with a fresh mind and analytical
                 strategies to quickly resolve concerns.
               </li>
-              <li>
-                Pursued resolutions to achieve complete customer satisfaction,
+              <li className={classes.arrows}>
+                ‣ Pursued resolutions to achieve complete customer satisfaction,
                 including tracking down hard-to-find merchandise at diverse
                 locations.
               </li>
@@ -242,19 +245,19 @@ export default function ScrollableTabsButtonAuto() {
                 className={classes.underline}
                 href="https://christdisciples.org/"
               >
-                <span>Christ Disciples Int'l Ministries, Inc.</span>
+                <span> Christ Disciples Int'l Ministries, Inc.</span>
               </a>
               <p>Jul 2019 - Aug 2019</p>
-              <li>
-                Reorganized and enhanced employee training closing knowledge
-                gaps and boost group performance.
+              <li className={classes.arrows}>
+                ‣ Reorganized and enhanced employee training closing
+                knowledge gaps and boost group performance.
               </li>
-              <li>
-                Developed a quality-driven culture to boost team performance and
-                efficiency while maintaining a highly satisfied workforce.
+              <li className={classes.arrows}>
+                ‣ Developed a quality-driven culture to boost team performance
+                and efficiency while maintaining a highly satisfied workforce.
               </li>
-              <li>
-                Planned and implemented a curriculum to teach up-to-date
+              <li className={classes.arrows}>
+                ‣ Planned and implemented a curriculum to teach up-to-date
                 technology to 10 students.
               </li>
             </p>
@@ -273,22 +276,22 @@ export default function ScrollableTabsButtonAuto() {
                 <span> Columbia University Medical Center </span>
               </a>
               <p>Jul 2018 - Aug 2018</p>
-              <li>
-                Interacted with customers professionally by phone, email, or
+              <li className={classes.arrows}>
+                ‣ Interacted with customers professionally by phone, email, or
                 in-person to provide information and directed to desired staff
                 members.
               </li>
-              <li>
-                Streamlined processing procedures for various financial and
+              <li className={classes.arrows}>
+                ‣ Streamlined processing procedures for various financial and
                 employee documents to improve traceability.
               </li>
-              <li>
-                Tracked and recorded expenses and reconciled accounts to
+              <li className={classes.arrows}>
+                ‣ Tracked and recorded expenses and reconciled accounts to
                 maintain accurate, current, and compliant financial records.
               </li>
             </p>
           </div>
-        </div>{" "}
+        </div>
       </TabPanel>
       <TabPanel className={classes.row} value={value} index={6}>
         <div class={classes.row}>
@@ -302,18 +305,20 @@ export default function ScrollableTabsButtonAuto() {
                 <span> Compass Group North America</span>
               </a>
               <p>Nov 2016 - May 2017</p>
-              <li>
-                Replenished condiments, beverages, and supplies while
+              <li className={classes.arrows}>
+                ‣ Replenished condiments, beverages, and supplies while
                 maintaining the cleanliness of service areas.
               </li>
-              <li>Cooked batches of food according to standard recipes.</li>
-              <li>
-                Inspected equipment such as refrigerators and warming lamps
+              <li className={classes.arrows}>
+                ‣ Cooked batches of food according to standard recipes.
+              </li>
+              <li className={classes.arrows}>
+                ‣ Inspected equipment such as refrigerators and warming lamps
                 every hour to check compliance with safe operating levels.
               </li>
             </p>
           </div>
-        </div>{" "}
+        </div>
       </TabPanel>
       <TabPanel className={classes.row} value={value} index={7}>
         <div class={classes.row}>
@@ -327,16 +332,16 @@ export default function ScrollableTabsButtonAuto() {
                 <span> Mercy Center</span>
               </a>
               <p>Jul 2016 - Aug 2018</p>
-              <li>
-                Assisted children with daily homework tasks by uncovering and
+              <li className={classes.arrows}>
+                ‣ Assisted children with daily homework tasks by uncovering and
                 removing obstacles to success.
               </li>
-              <li>
-                Tutored over 20 struggling, average and advanced students in
+              <li className={classes.arrows}>
+                ‣ Tutored over 20 struggling, average and advanced students in
                 math and reading course materials.
               </li>
-              <li>
-                Displayed positive role-modeling, high energy, engagement, and
+              <li className={classes.arrows}>
+                ‣ Displayed positive role-modeling, high energy, engagement, and
                 good communication skills with children.
               </li>
             </p>
