@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import { Button } from "./Button";
 import "./Navbar.css";
-import Dropdown from "./Dropdown";
 import logo from "../images/MadanyLogo5.png";
 import { Link } from "react-scroll";
+//import { Link } from "react-router-dom";
 
 function Navbar() {
   const [click, setClick] = useState(false);
@@ -28,7 +28,7 @@ function Navbar() {
       setDropdown(false);
     }
   };
-
+ 
   return (
     <>
       <nav className="navbar">

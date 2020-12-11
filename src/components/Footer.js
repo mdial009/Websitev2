@@ -98,8 +98,8 @@ function Footer() {
               class="website-rights"
               href="https://github.com/mdial009/Websitev2"
             >
-              {" "}
-              Madany Diallo © 2020{" "}
+              
+              Madany Diallo © 2020
             </a>
             <a class="website-rights" href="https://github.com/mdial009">
               {githubInfo.followers &&
