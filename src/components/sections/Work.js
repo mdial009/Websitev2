@@ -34,13 +34,13 @@ export default function Work() {
         </a>
       </div>
       <div className="Works">
-        <StockWeb />
+        <StockWeb/>
         <div className="Spacediv"></div>
-        <VirtualAssistant />
+        <VirtualAssistant/>
         <div className="Spacediv"></div>
-        <AI />
+        <AI/>
         <div className="Spacediv"></div>
-        <ICM />
+        <ICM/>
         <div className="Spacediv"></div>
       </div>
     </>

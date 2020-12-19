@@ -9,7 +9,7 @@ import Collapse from "@material-ui/core/Collapse";
 import IconButton from "@material-ui/core/IconButton";
 import Typography from "@material-ui/core/Typography";
 import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
-import PortfolioWebsite from "../../images/PortfolioWebsite.png";
+import PortfolioWebsite from "../../images/mdial009.gif";
 
 export default function PortfolioCard() {
   const useStyles = makeStyles((theme) => ({
