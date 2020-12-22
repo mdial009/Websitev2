@@ -85,10 +85,6 @@ export default function VirtualAssistantCard() {
           <span className={classes.span}></span>
           <div className={classes.Typographys}>
             <a href="https://mdial009.github.io/">
-              <i class="fas fa-external-link-square-alt"></i>
-            </a>
-            <span className={classes.spans}></span>
-            <a href="https://mdial009.github.io/">
               <i class="fab fa-github"></i>
             </a>
           </div>

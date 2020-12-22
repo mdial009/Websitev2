@@ -102,11 +102,11 @@ export default function GithubCard() {
           align="center"
         >
           <div className={classes.Typographys}>
-            <a href="https://mdial009.github.io/">
+            <a href="https://react-githubs-user.netlify.app/">
               <i class="fas fa-external-link-square-alt"></i>
             </a>
             <span className={classes.spans}></span>
-            <a href="https://mdial009.github.io/">
+            <a href="https://github.com/mdial009/Github-User-Project">
               <i class="fab fa-github"></i>
             </a>
           </div>
