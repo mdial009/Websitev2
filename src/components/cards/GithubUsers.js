@@ -9,7 +9,7 @@ import Collapse from "@material-ui/core/Collapse";
 import IconButton from "@material-ui/core/IconButton";
 import Typography from "@material-ui/core/Typography";
 import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
-import GithubUsers from "../../images/GithubUserProject.png";
+import GithubUsers from "../../images/GithubUser.gif";
 
 export default function GithubCard() {
   const useStyles = makeStyles((theme) => ({
