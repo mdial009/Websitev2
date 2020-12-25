@@ -4,9 +4,7 @@ import { makeStyles } from "@material-ui/core/styles";
 
 const useStyles = makeStyles((theme) => ({
   root: {
-    paddingTop: "56.25%", // 16:9
     color: "#0096c7",
-
 
   },
 }));
@@ -15,10 +13,9 @@ const columns = [
   { field: "Year", headerName: "Year", width: 68 },
   { field: "Title", headerName: "Title", width: 156 },
   { field: "Made", headerName: "Made at", width: 94 },
-  { field: "Built", headerName: "Built with", width: 200 },
-  { field: "Link", headerName: "Link", width: 450 },
+  { field: "Built", headerName: "Built with", width: 182 },
+  { field: "Link", headerName: "Link", width: 412 },
 ];
-
 const rows = [
   {
     id: 1,
