@@ -15,6 +15,15 @@ const useStyles = makeStyles({
     color: "#0096c7",
     borderBottom: "none",
   },
+    h1: {
+    margin: "auto auto auto",
+    textAlign: "center",
+  },
+    p: {
+    margin: "auto auto auto",
+    textAlign: "center",
+    marginBottom:"50px"
+  },
 });
 
 function createData(title, year, made, built, links) {
@@ -184,8 +193,8 @@ export default function DenseTable() {
   return (
     <TableContainer className={classes.table} component={Paper}>
       <div>
-        <h1>Archive</h1>
-        <h2>A big list of things I’ve worked on</h2>
+        <h1 className={classes.h1}>Archive</h1>
+        <p className={classes.p}>A big list of things I’ve worked on</p>
       </div>
       <Table className={classes.table} size="large">
         <TableHead>
