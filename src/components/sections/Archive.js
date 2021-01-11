@@ -1,159 +1,232 @@
 import React from "react";
-import { DataGrid } from "@material-ui/data-grid";
 import { makeStyles } from "@material-ui/core/styles";
+import Table from "@material-ui/core/Table";
+import TableBody from "@material-ui/core/TableBody";
+import TableCell from "@material-ui/core/TableCell";
+import TableContainer from "@material-ui/core/TableContainer";
+import TableHead from "@material-ui/core/TableHead";
+import TableRow from "@material-ui/core/TableRow";
+import Paper from "@material-ui/core/Paper";
 
-const useStyles = makeStyles((theme) => ({
-  root: {
+const useStyles = makeStyles({
+  table: {
+    width: "200",
+    backgroundColor: "#0a192f",
     color: "#0096c7",
+    borderBottom: "none",
   },
-}));
+});
 
-const columns = [
-  { field: "Year", headerName: "Year", width: 68 },
-  { field: "Title", headerName: "Title", width: 156 },
-  { field: "Made", headerName: "Made at", width: 94 },
-  { field: "Built", headerName: "Built with", width: 182 },
-  { field: "Link", headerName: "Link", width: 412 },
-];
+function createData(title, year, made, built, links) {
+  return { title, year, made, built, links };
+}
+
 const rows = [
-  {
-    id: 1,
-    Year: 2020,
-    Title: "Discord Bot",
-    Made: " — ",
-    Built: "React·CSS·HTML",
-    Link: "https://github.com/mdial009/Discord-Bot",
-  },
-  {
-    id: 2,
-    Year: 2020,
-    Title: "Mailing-Client",
-    Made: " — ",
-    Built: "Python",
-    Link: "https://github.com/mdial009/Mailing-Client",
-  },
-  {
-    id: 3,
-    Year: 2020,
-    Title: "L3v3l3ditor",
-    Made: " — ",
-    Built: "Python·C#·Unity3D",
-    Link: "https://github.com/mdial009/L3v3l3ditor",
-  },
-  {
-    id: 4,
-    Year: 2020,
-    Title: "Countdown",
-    Made: " — ",
-    Built: "Javascript·HTML·CSS",
-    Link: "https://github.com/mdial009/Javascript",
-  },
-  {
-    id: 5,
-    Year: 2020,
-    Title: "Grocery",
-    Made: " — ",
-    Built: "Javascript·HTML·CSS",
-    Link: "https://github.com/mdial009/Javascript",
-  },
-  {
-    id: 6,
-    Year: 2020,
-    Title: "Lorem",
-    Made: " — ",
-    Built: "Javascript·HTML·CSS",
-    Link: "https://github.com/mdial009/Javascript",
-  },
-  {
-    id: 7,
-    Year: 2020,
-    Title: "Navbar",
-    Made: " — ",
-    Built: "Javascript·HTML·CSS",
-    Link: "https://github.com/mdial009/Javascript",
-  },
-  {
-    id: 8,
-    Year: 2020,
-    Title: "Questions",
-    Made: " — ",
-    Built: "Javascript·HTML·CSS",
-    Link: "https://github.com/mdial009/Javascript",
-  },
-  {
-    id: 9,
-    Year: 2020,
-    Title: "RandomColor",
-    Made: " — ",
-    Built: "Javascript·HTML·CSS",
-    Link: "https://github.com/mdial009/Javascript",
-  },
-  {
-    id: 10,
-    Year: 2020,
-    Title: "Reviews",
-    Made: " — ",
-    Built: "Javascript·HTML·CSS",
-    Link: "https://github.com/mdial009/Javascript",
-  },
-  {
-    id: 11,
-    Year: 2020,
-    Title: "Scroll",
-    Made: " — ",
-    Built: "Javascript·HTML·CSS",
-    Link: "https://github.com/mdial009/Javascript",
-  },
-  {
-    id: 12,
-    Year: 2020,
-    Title: "Sidebars",
-    Made: " — ",
-    Built: "Javascript·HTML·CSS",
-    Link: "https://github.com/mdial009/Javascript",
-  },
-  {
-    id: 13,
-    Year: 2020,
-    Title: "Slider",
-    Made: " — ",
-    Built: "Javascript·HTML·CSS",
-    Link: "https://github.com/mdial009/Javascript",
-  },
-  {
-    id: 14,
-    Year: 2020,
-    Title: "Tabs",
-    Made: " — ",
-    Built: "Javascript·HTML·CSS",
-    Link: "https://github.com/mdial009/Javascript",
-  },
-  {
-    id: 15,
-    Year: 2020,
-    Title: "Video",
-    Made: " — ",
-    Built: "Javascript·HTML·CSS",
-    Link: "https://github.com/mdial009/Javascript",
-  },
+  createData(
+    "Discord",
+    2020,
+    "―	",
+    "Javascript",
+    <a href="https://github.com/mdial009/Discord-Bot">
+      <i class="fab fa-github"></i>
+    </a>
+  ),
+  createData(
+    "L3v3l3ditor",
+    2020,
+    "—",
+    "Unity3D · C# · Python",
+    <a href="https://github.com/mdial009/L3v3l3ditor">
+      <i class="fab fa-github"></i>
+    </a>
+  ),
+  createData(
+    "Countdown",
+    2020,
+    "—",
+    "Javascript · HTML · CSS",
+    <a href="https://github.com/mdial009/Javascript">
+      <i class="fab fa-github"></i>
+    </a>
+  ),
+  createData(
+    "Counter",
+    2020,
+    "—",
+    "Javascript · HTML · CSS",
+    <a href="https://github.com/mdial009/Javascript">
+      <i class="fab fa-github"></i>
+    </a>
+  ),
+  createData(
+    "Grocery List",
+    2020,
+    "—",
+    "Javascript · HTML · CSS",
+    <a href="https://github.com/mdial009/Javascript">
+      <i class="fab fa-github"></i>
+    </a>
+  ),
+    createData(
+    "Lorem",
+    2020,
+    "—",
+    "Javascript · HTML · CSS",
+    <a href="https://github.com/mdial009/Javascript">
+      <i class="fab fa-github"></i>
+    </a>
+  ),
+    createData(
+    "Menu",
+    2020,
+    "—",
+    "Javascript · HTML · CSS",
+    <a href="https://github.com/mdial009/Javascript">
+      <i class="fab fa-github"></i>
+    </a>
+  ),
+    createData(
+    "Modal",
+    2020,
+    "—",
+    "Javascript · HTML · CSS",
+    <a href="https://github.com/mdial009/Javascript">
+      <i class="fab fa-github"></i>
+    </a>
+  ),
+    createData(
+    "Navbar",
+    2020,
+    "—",
+    "Javascript · HTML · CSS",
+    <a href="https://github.com/mdial009/Javascript">
+      <i class="fab fa-github"></i>
+    </a>
+  ),
+    createData(
+    "Questions",
+    2020,
+    "—",
+    "Javascript · HTML · CSS",
+    <a href="https://github.com/mdial009/Javascript">
+      <i class="fab fa-github"></i>
+    </a>
+  ),
+    createData(
+    "Randomcolor",
+    2020,
+    "—",
+    "Javascript · HTML · CSS",
+    <a href="https://github.com/mdial009/Javascript">
+      <i class="fab fa-github"></i>
+    </a>
+  ),
+    createData(
+    "Reviews",
+    2020,
+    "—",
+    "Javascript · HTML · CSS",
+    <a href="https://github.com/mdial009/Javascript">
+      <i class="fab fa-github"></i>
+    </a>
+  ),
+    createData(
+    "Scroll",
+    2020,
+    "—",
+    "Javascript · HTML · CSS",
+    <a href="https://github.com/mdial009/Javascript">
+      <i class="fab fa-github"></i>
+    </a>
+  ),
+    createData(
+    "Sidebars",
+    2020,
+    "—",
+    "Javascript · HTML · CSS",
+    <a href="https://github.com/mdial009/Javascript">
+      <i class="fab fa-github"></i>
+    </a>
+  ),
+    createData(
+    "Slider",
+    2020,
+    "—",
+    "Javascript · HTML · CSS",
+    <a href="https://github.com/mdial009/Javascript">
+      <i class="fab fa-github"></i>
+    </a>
+  ),
+   createData(
+    "Tabs",
+    2020,
+    "—",
+    "Javascript · HTML · CSS",
+    <a href="https://github.com/mdial009/Javascript">
+      <i class="fab fa-github"></i>
+    </a>
+  ),
+   createData(
+    "Video",
+    2020,
+    "—",
+    "Javascript · HTML · CSS",
+    <a href="https://github.com/mdial009/Javascript">
+      <i class="fab fa-github"></i>
+    </a>
+  ),
+
 ];
 
-export default function Archive() {
+export default function DenseTable() {
   const classes = useStyles();
 
   return (
-    <>
-      <h1>Archive</h1>
-      <span>A big list of things I’ve worked on</span>
-      <div style={{ height: 900, width: "auto" }}>
-        <DataGrid
-          className={classes.root}
-          rows={rows}
-          columns={columns}
-          pageSize={20}
-          checkboxSelection
-        />
+    <TableContainer className={classes.table} component={Paper}>
+      <div>
+        <h1>Archive</h1>
+        <h2>A big list of things I’ve worked on</h2>
       </div>
-    </>
+      <Table className={classes.table} size="large">
+        <TableHead>
+          <TableRow>
+            <TableCell className={classes.table}>Title</TableCell>
+            <TableCell className={classes.table} align="right">
+              Year
+            </TableCell>
+            <TableCell className={classes.table} align="right">
+              Made at
+            </TableCell>
+            <TableCell className={classes.table} align="right">
+              Built with
+            </TableCell>
+            <TableCell className={classes.table} align="right">
+              Link
+            </TableCell>
+          </TableRow>
+        </TableHead>
+        <TableBody>
+          {rows.map((row) => (
+            <TableRow key={row.title}>
+              <TableCell className={classes.table} component="th" scope="row">
+                {row.title}
+              </TableCell>
+              <TableCell className={classes.table} align="right">
+                {row.year}
+              </TableCell>
+              <TableCell className={classes.table} align="right">
+                {row.made}
+              </TableCell>
+              <TableCell className={classes.table} align="right">
+                {row.built}
+              </TableCell>
+              <TableCell className={classes.table} align="right">
+                {row.links}
+              </TableCell>
+            </TableRow>
+          ))}
+        </TableBody>
+      </Table>
+    </TableContainer>
   );
 }
