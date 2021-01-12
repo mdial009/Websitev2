@@ -32,7 +32,6 @@ function Navbar() {
   return (
     <>
       <nav className="navbar">
-        <h1>WORK IN PROGRESS</h1>
         <Link to="/" className="navbar-logo" onClick={closeMobileMenu}>
           <img src={logo} />
         </Link>
