@@ -14,9 +14,9 @@ export default function Work() {
   return (
     <>
       <div className="Work">
-        <span>03. Some Things I’ve Built</span>
+        <span className="Feature4">03. Some Things I’ve Built</span>
       </div>
-      <div className="Features">
+      <div className="Features3">
         <span>Featured Projects</span>
       </div>
       <div className="Works">
@@ -28,11 +28,9 @@ export default function Work() {
       <div className="Features">
         <span>Other Noteworthy Projects</span>
       </div>
-      <div className="Features">
-        <a href="www.github.com">
-         <span> <Link to="/Archive">View The Archive</Link></span>
-        </a>
-      </div>
+               <span className="Features2"> <Link to="/Archive">View The Archive</Link></span>
+
+    
       <div className="Works">
         <StockWeb/>
         <div className="Spacediv"></div>
