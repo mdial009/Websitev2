@@ -86,7 +86,7 @@ export default function StockWebCard() {
           <span className={classes.span}></span>
           <div className={classes.Typographys}>
             <a href="https://github.com/mdial009/mdial009.github.io">
-              <i class="fab fa-github"></i>
+              <i class="fab fa-github fa-2x"></i>
             </a>
           </div>
         </Typography>

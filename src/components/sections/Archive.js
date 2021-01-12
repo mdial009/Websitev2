@@ -7,10 +7,10 @@ import TableContainer from "@material-ui/core/TableContainer";
 import TableHead from "@material-ui/core/TableHead";
 import TableRow from "@material-ui/core/TableRow";
 import Paper from "@material-ui/core/Paper";
+import Button from '@material-ui/core/Button';
 
 const useStyles = makeStyles({
   table: {
-    width: "200",
     backgroundColor: "#0a192f",
     color: "#0096c7",
     borderBottom: "none",
@@ -20,6 +20,11 @@ const useStyles = makeStyles({
     textAlign: "center",
   },
     p: {
+    margin: "auto auto auto",
+    textAlign: "center",
+    marginBottom:"5px"
+  },
+     p1: {
     margin: "auto auto auto",
     textAlign: "center",
     marginBottom:"50px"
@@ -35,9 +40,9 @@ const rows = [
     "Discord",
     2020,
     "―	",
-    "Javascript",
+    "Javascript · NodeJS",
     <a href="https://github.com/mdial009/Discord-Bot">
-      <i class="fab fa-github"></i>
+      <i class="fab fa-github fa-2x"></i>
     </a>
   ),
   createData(
@@ -46,7 +51,7 @@ const rows = [
     "—",
     "Unity3D · C# · Python",
     <a href="https://github.com/mdial009/L3v3l3ditor">
-      <i class="fab fa-github"></i>
+      <i class="fab fa-github fa-2x"></i>
     </a>
   ),
   createData(
@@ -55,7 +60,7 @@ const rows = [
     "—",
     "Javascript · HTML · CSS",
     <a href="https://github.com/mdial009/Javascript">
-      <i class="fab fa-github"></i>
+      <i class="fab fa-github fa-2x"></i>
     </a>
   ),
   createData(
@@ -64,7 +69,7 @@ const rows = [
     "—",
     "Javascript · HTML · CSS",
     <a href="https://github.com/mdial009/Javascript">
-      <i class="fab fa-github"></i>
+      <i class="fab fa-github fa-2x"></i>
     </a>
   ),
   createData(
@@ -73,7 +78,7 @@ const rows = [
     "—",
     "Javascript · HTML · CSS",
     <a href="https://github.com/mdial009/Javascript">
-      <i class="fab fa-github"></i>
+      <i class="fab fa-github fa-2x"></i>
     </a>
   ),
     createData(
@@ -82,7 +87,7 @@ const rows = [
     "—",
     "Javascript · HTML · CSS",
     <a href="https://github.com/mdial009/Javascript">
-      <i class="fab fa-github"></i>
+      <i class="fab fa-github fa-2x"></i>
     </a>
   ),
     createData(
@@ -91,7 +96,7 @@ const rows = [
     "—",
     "Javascript · HTML · CSS",
     <a href="https://github.com/mdial009/Javascript">
-      <i class="fab fa-github"></i>
+      <i class="fab fa-github fa-2x"></i>
     </a>
   ),
     createData(
@@ -100,7 +105,7 @@ const rows = [
     "—",
     "Javascript · HTML · CSS",
     <a href="https://github.com/mdial009/Javascript">
-      <i class="fab fa-github"></i>
+      <i class="fab fa-github fa-2x"></i>
     </a>
   ),
     createData(
@@ -109,7 +114,7 @@ const rows = [
     "—",
     "Javascript · HTML · CSS",
     <a href="https://github.com/mdial009/Javascript">
-      <i class="fab fa-github"></i>
+      <i class="fab fa-github fa-2x"></i>
     </a>
   ),
     createData(
@@ -118,7 +123,7 @@ const rows = [
     "—",
     "Javascript · HTML · CSS",
     <a href="https://github.com/mdial009/Javascript">
-      <i class="fab fa-github"></i>
+      <i class="fab fa-github fa-2x"></i>
     </a>
   ),
     createData(
@@ -127,7 +132,7 @@ const rows = [
     "—",
     "Javascript · HTML · CSS",
     <a href="https://github.com/mdial009/Javascript">
-      <i class="fab fa-github"></i>
+      <i class="fab fa-github fa-2x"></i>
     </a>
   ),
     createData(
@@ -136,7 +141,7 @@ const rows = [
     "—",
     "Javascript · HTML · CSS",
     <a href="https://github.com/mdial009/Javascript">
-      <i class="fab fa-github"></i>
+      <i class="fab fa-github fa-2x"></i>
     </a>
   ),
     createData(
@@ -145,7 +150,7 @@ const rows = [
     "—",
     "Javascript · HTML · CSS",
     <a href="https://github.com/mdial009/Javascript">
-      <i class="fab fa-github"></i>
+      <i class="fab fa-github fa-2x"></i>
     </a>
   ),
     createData(
@@ -154,7 +159,7 @@ const rows = [
     "—",
     "Javascript · HTML · CSS",
     <a href="https://github.com/mdial009/Javascript">
-      <i class="fab fa-github"></i>
+      <i class="fab fa-github fa-2x"></i>
     </a>
   ),
     createData(
@@ -163,7 +168,7 @@ const rows = [
     "—",
     "Javascript · HTML · CSS",
     <a href="https://github.com/mdial009/Javascript">
-      <i class="fab fa-github"></i>
+      <i class="fab fa-github fa-2x"></i>
     </a>
   ),
    createData(
@@ -172,7 +177,7 @@ const rows = [
     "—",
     "Javascript · HTML · CSS",
     <a href="https://github.com/mdial009/Javascript">
-      <i class="fab fa-github"></i>
+      <i class="fab fa-github fa-2x"></i>
     </a>
   ),
    createData(
@@ -181,7 +186,7 @@ const rows = [
     "—",
     "Javascript · HTML · CSS",
     <a href="https://github.com/mdial009/Javascript">
-      <i class="fab fa-github"></i>
+      <i class="fab fa-github fa-2x"></i>
     </a>
   ),
 
@@ -195,6 +200,9 @@ export default function DenseTable() {
       <div>
         <h1 className={classes.h1}>Archive</h1>
         <p className={classes.p}>A big list of things I’ve worked on</p>
+        <p className={classes.p1}><Button href="https://madany-diallo.netlify.app/" color="primary">
+        Home
+      </Button></p>
       </div>
       <Table className={classes.table} size="large">
         <TableHead>

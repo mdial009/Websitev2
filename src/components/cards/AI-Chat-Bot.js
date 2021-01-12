@@ -39,6 +39,7 @@ export default function StockWebCard() {
     },
     Typography: {
       color: "#0096c7",
+
     },
     paragraph: {
       color: "#0096c7",
@@ -81,7 +82,7 @@ export default function StockWebCard() {
           <span className={classes.span}></span>
           <div className={classes.Typographys}>
             <a href="https://mdial009.github.io/">
-              <i class="fab fa-github"></i>
+              <i class="fab fa-github fa-2x"></i>
             </a>
           </div>
         </Typography>
