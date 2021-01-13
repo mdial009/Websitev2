@@ -82,7 +82,6 @@ function Footer() {
               Facebook
             </Link>
             <Link to="/">Youtube</Link>
-            <Link to="/">Twitter</Link>
           </div>
         </div>
       </div>
@@ -91,6 +90,13 @@ function Footer() {
           <div class="footer-logo">
             <Link to="/" className="social-logo">
               <img className="social-logo" src={logo} />
+                 <a
+              class="website-rights"
+              href="https://github.com/mdial009/Websitev2"
+            >
+              
+              Madany Diallo © 2020
+            </a>
             </Link>
           </div>
           <small class="website-rights">
