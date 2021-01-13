@@ -28,13 +28,17 @@ function Navbar() {
       setDropdown(false);
     }
   };
- 
+
   return (
     <>
       <nav className="navbar">
-        <Link to="/" className="navbar-logo" onClick={closeMobileMenu}>
+        <a
+          className="navbar-logo"
+          onClick={closeMobileMenu}
+          href="https://madany-diallo.netlify.app/"
+        >
           <img src={logo} />
-        </Link>
+        </a>
         <div className="menu-icon" onClick={handleClick}>
           <i className={click ? "fas fa-times" : "fas fa-bars"} />
         </div>
