@@ -91,20 +91,47 @@ export default function ScrollableTabsButtonAuto() {
           variant="scrollable"
           scrollButtons="auto"
         >
-          <Tab label="IBM" {...a11yProps(0)} />
-          <Tab label="SUNY Plattsburgh" {...a11yProps(1)} />
-          <Tab label="Staples" {...a11yProps(2)} />
-          <Tab label="Speedway" {...a11yProps(3)} />
+          <Tab label="Insum" {...a11yProps(0)} />
+          <Tab label="IBM" {...a11yProps(1)} />
+          <Tab label="SUNY Plattsburgh" {...a11yProps(2)} />
+          <Tab label="Staples" {...a11yProps(3)} />
+          <Tab label="Speedway" {...a11yProps(4)} />
           <Tab
             label="Christ Disciples Int'l Ministries, Inc."
-            {...a11yProps(4)}
+            {...a11yProps(5)}
           />
-          <Tab label="Columbia University Medical Center" {...a11yProps(5)} />
-          <Tab label="Compass Group North America" {...a11yProps(6)} />
-          <Tab label="Mercy Center" {...a11yProps(7)} />
+          <Tab label="Columbia University Medical Center" {...a11yProps(6)} />
+          <Tab label="Compass Group North America" {...a11yProps(7)} />
+          <Tab label="Mercy Center" {...a11yProps(8)} />
         </Tabs>
       </AppBar>
       <TabPanel className={classes.row} value={value} index={0}>
+        <div class={classes.row}>
+          <div className={classes.column}>
+            <p>
+              Software Engineer @
+              <a className={classes.underline} href="https://www.insum.ca/">
+                <span> Insum</span>
+              </a>
+              <p>May 2021 - Present</p>
+              <li className={classes.arrows}>
+                ‣ Develop web applications with Oracle Application Express; ‣
+                Work as a team with our analysts to produce a functional
+                analysis that meets our customer’s requirements;
+              </li>
+              <li className={classes.arrows}>
+                ‣ Find and communicate technical problems, and applicable
+                solutions;
+              </li>
+              <li className={classes.arrows}>
+                ‣ Follow company standards, best practices, and procedures for
+                programming;
+              </li>
+            </p>
+          </div>
+        </div>
+      </TabPanel>
+      <TabPanel className={classes.row} value={value} index={1}>
         <div class={classes.row}>
           <div className={classes.column}>
             <p>
@@ -132,7 +159,7 @@ export default function ScrollableTabsButtonAuto() {
           </div>
         </div>
       </TabPanel>
-      <TabPanel value={value} index={1} class={classes.row}>
+      <TabPanel value={value} index={2} class={classes.row}>
         <div class={classes.row}>
           <div className={classes.column}>
             <p>
@@ -185,7 +212,7 @@ export default function ScrollableTabsButtonAuto() {
           </div>
         </div>
       </TabPanel>
-      <TabPanel className={classes.row} value={value} index={2}>
+      <TabPanel className={classes.row} value={value} index={3}>
         <div class={classes.row}>
           <div className={classes.column}>
             <p>
@@ -210,7 +237,7 @@ export default function ScrollableTabsButtonAuto() {
           </div>
         </div>
       </TabPanel>
-      <TabPanel className={classes.row} value={value} index={3}>
+      <TabPanel className={classes.row} value={value} index={4}>
         <div class={classes.row}>
           <div className={classes.column}>
             <p>
@@ -236,7 +263,7 @@ export default function ScrollableTabsButtonAuto() {
           </div>
         </div>{" "}
       </TabPanel>
-      <TabPanel className={classes.row} value={value} index={4}>
+      <TabPanel className={classes.row} value={value} index={5}>
         <div class={classes.row}>
           <div className={classes.column}>
             <p>
@@ -249,8 +276,8 @@ export default function ScrollableTabsButtonAuto() {
               </a>
               <p>Jul 2019 - Aug 2019</p>
               <li className={classes.arrows}>
-                ‣ Reorganized and enhanced employee training closing
-                knowledge gaps and boost group performance.
+                ‣ Reorganized and enhanced employee training closing knowledge
+                gaps and boost group performance.
               </li>
               <li className={classes.arrows}>
                 ‣ Developed a quality-driven culture to boost team performance
@@ -264,7 +291,7 @@ export default function ScrollableTabsButtonAuto() {
           </div>
         </div>
       </TabPanel>
-      <TabPanel className={classes.row} value={value} index={5}>
+      <TabPanel className={classes.row} value={value} index={6}>
         <div class={classes.row}>
           <div className={classes.column}>
             <p>
@@ -293,7 +320,7 @@ export default function ScrollableTabsButtonAuto() {
           </div>
         </div>
       </TabPanel>
-      <TabPanel className={classes.row} value={value} index={6}>
+      <TabPanel className={classes.row} value={value} index={7}>
         <div class={classes.row}>
           <div className={classes.column}>
             <p>
@@ -320,7 +347,7 @@ export default function ScrollableTabsButtonAuto() {
           </div>
         </div>
       </TabPanel>
-      <TabPanel className={classes.row} value={value} index={7}>
+      <TabPanel className={classes.row} value={value} index={8}>
         <div class={classes.row}>
           <div className={classes.column}>
             <p>

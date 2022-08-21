@@ -12,7 +12,7 @@ export default function About() {
           <div className="underline">
             <h2>Madany Diallo</h2>
           </div>
-          <p>I'm a software engineer living in the New York.</p>
+          <p>I'm a software engineer living in New York.</p>
           <div className="box">
             <div class="card">
               <div class="imgBx">
