@@ -88,10 +88,8 @@ function Footer() {
       <section class="social-media">
         <div class="social-media-wrap">
           <div class="footer-logo">
-            <a
-              href="https://madany-diallo.netlify.app/"
-            >
-              <img className="social-logo" src={logo} />
+            <a href="https://madany-diallo.netlify.app/">
+              <img className="social-logo" src={logo} alt="social-logo" />
             </a>
           </div>
           <small class="website-rights">

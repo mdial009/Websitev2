@@ -7,7 +7,7 @@ import { Link } from "react-scroll";
 
 function Navbar() {
   const [click, setClick] = useState(false);
-  const [dropdown, setDropdown] = useState(false);
+  const [setDropdown] = useState(false);
 
   const handleClick = () => setClick(!click);
 
@@ -37,7 +37,7 @@ function Navbar() {
           onClick={closeMobileMenu}
           href="https://madany-diallo.netlify.app/"
         >
-          <img src={logo} />
+          <img src={logo} alt="logo" />
         </a>
         <div className="menu-icon" onClick={handleClick}>
           <i className={click ? "fas fa-times" : "fas fa-bars"} />
@@ -78,11 +78,7 @@ function Navbar() {
             </Link>
           </li>
           <li>
-            <Link
-              to="/sign-up"
-              className="nav-links-mobile"
-              onClick={closeMobileMenu}
-            >
+            <Link to="/" className="nav-links-mobile" onClick={closeMobileMenu}>
               Résumé
             </Link>
           </li>
