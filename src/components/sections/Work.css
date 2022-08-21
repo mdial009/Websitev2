@@ -1,0 +1,84 @@
+.Work {
+  padding: auto auto auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;  
+}
+
+.Works {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  font-size: 13px;
+}
+
+.Spacediv {
+  margin-left: 20px;
+}
+
+.Features {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding-bottom: 20px;
+  padding-top: 30px;
+  justify-content: center;
+  align-items: center;
+  font-size: 13px;
+}
+.Features2 {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding-bottom: 30px;
+  justify-content: center;
+  align-items: center;
+  font-size: 13px;
+}
+.Features3 {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding-bottom: 20px;
+  justify-content: center;
+  align-items: center;
+  font-size: 13px;
+}
+.Features4 {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding-bottom: 100px;
+  justify-content: center;
+  align-items: center;
+  font-size: 13px;
+}
+
+.smallheading{
+  color: white,
+
+}
+
+
+
+
+
+/*         <MCCard />
+        <div className="Spacediv"></div>
+        <ITSS />
+        <div className="Spacediv"></div>
+        <Staples />
+        <div className="Spacediv"></div>
+        <Speedway />
+        <div className="Spacediv"></div>
+        <TA />
+        <div className="Spacediv"></div>
+        <GLCard />
+        <div className="Spacediv"></div>
+        <OA />
+        <div className="Spacediv"></div>
+        <FSW />  */
+
+  
