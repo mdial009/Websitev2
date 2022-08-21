@@ -1,7 +1,7 @@
 import React from "react";
 import "../../App.css";
 import "./About.css";
-import MePic2 from "../../images/MePic2.JPG";
+import MePic3 from "../../images/MePic3.jpeg";
 
 export default function About() {
   return (
@@ -12,11 +12,11 @@ export default function About() {
           <div className="underline">
             <h2>Madany Diallo</h2>
           </div>
-          <p>I'm a software engineer living in the Bronx.</p>
+          <p>I'm a software engineer living in the New York.</p>
           <div className="box">
             <div class="card">
               <div class="imgBx">
-                <img src={MePic2} alt={"Madany Diallo"}></img>
+                <img src={MePic3} alt={"Madany Diallo"}></img>
               </div>
               <div className="details">
                 <h2>Software Engineer</h2>
@@ -65,7 +65,7 @@ export default function About() {
               Hi, I am Madany Diallo. I was born in Conkary, Guinea. I moved to
               the Bronx in New York City when I was seven years old and have
               since lived in the Bronx. Currenntly working as a Junior APEX
-              Engineer for
+              Engineer for{" "}
               <a href="https://www.insum.ca/about-us/">Insum Solutions</a>.
             </p>
           </div>

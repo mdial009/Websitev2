@@ -1,14 +1,14 @@
 import React from "react";
 import "../../App.css";
 import "./Work.css";
-import PortfolioWebsite from "../cards/Portfolio.js";
+import PortflioWebsiteV1 from "../cards/Portfolio.js";
+import PortflioWebsiteV3 from "../cards/PortfolioV3.js";
 import GithubUsers from "../../components/cards/GithubUsers.js";
 import StockWeb from "../../components/cards/StockWeb.js";
 import VirtualAssistant from "../../components/cards/VirtualAssistant.js";
 import AI from "../../components/cards/AI-Chat-Bot.js";
 import ICM from "../../components/cards/ICM.js";
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
-
+import { BrowserRouter as Link } from "react-router-dom";
 
 export default function Work() {
   return (
@@ -20,7 +20,9 @@ export default function Work() {
         <span>Featured Projects</span>
       </div>
       <div className="Works">
-        <PortfolioWebsite />
+        <PortflioWebsiteV3 />
+        <div className="Spacediv"></div>
+        <PortflioWebsiteV1 />
         <div className="Spacediv"></div>
         <GithubUsers />
         <div className="Spacediv"></div>
@@ -28,17 +30,19 @@ export default function Work() {
       <div className="Features">
         <span>Other Noteworthy Projects</span>
       </div>
-               <span className="Features2"> <Link to="/Archive">View The Archive</Link></span>
+      <span className="Features2">
+        {" "}
+        <Link to="/Archive">View The Archive</Link>
+      </span>
 
-    
       <div className="Works">
-        <StockWeb/>
+        <StockWeb />
         <div className="Spacediv"></div>
-        <VirtualAssistant/>
+        <VirtualAssistant />
         <div className="Spacediv"></div>
-        <AI/>
+        <AI />
         <div className="Spacediv"></div>
-        <ICM/>
+        <ICM />
         <div className="Spacediv"></div>
       </div>
     </>
